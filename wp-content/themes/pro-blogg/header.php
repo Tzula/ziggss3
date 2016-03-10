@@ -6,11 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<?php wp_head(); ?>
-	</head>
+	</head> 
 <body <?php body_class(); ?>>
 	<header id="head">
-		<div class="head-top">		
+		<div class="head-top">	
+		<!--放置网站logo -->
+			<div class="web-logo">
+				<img src="./wp-content/themes/pro-blogg/images/web-logo.png" width="150px" height="150px">
+			</div>
 			<div class="container">
+			<div class="head_search">
+				<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+					<label>
+						<span class="screen-reader-text">Search for:</span>
+						<input type="text" class="search-field" placeholder="Search" value="<?php echo get_search_query() ?>" name="s" />
+						<input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/search-icon.jpg">
+					</label>
+				</form>
+			</div>
+			
 				<div class="head-nav">
 					<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
 				</div>
@@ -33,6 +47,7 @@
 				<div class="clear"></div>
 			</div>
 		</div>
+		<!--
 		<div class="head-logo">
 			<div class="container">
 				<div class="logo">
@@ -41,4 +56,5 @@
 				</div>
 			</div>
 		</div>
+	-->
 	</header>

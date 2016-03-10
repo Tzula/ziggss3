@@ -304,11 +304,15 @@ add_theme_support( "custom-header", $custom_header_args );
 */
 
 function catch_that_image() {
-  $first_img = '';
-  ob_start();
-  ob_end_clean();
-  $str = get_the_content();
-  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $str,   $matches);//用正则过滤文章
- $first_img = $matches[1][0];
- return $first_img;
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	
+	$str = get_the_content();
+
+$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $str, $matches);//用正则过滤文章
+
+	$first_img = $matches[1][0];
+	return $first_img;
 } ;

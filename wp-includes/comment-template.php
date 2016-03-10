@@ -2212,7 +2212,10 @@ function comment_form( $args = array(), $post_id = null ) {
 		 */
 		do_action( 'comment_form_before' );
 		?>
-		<div id="respond" class="comment-respond">
+
+		
+		<!--博客评论窗口-->
+		<div id="respond" class="comment-respond" >
 			<?php
 			echo $args['title_reply_before'];
 
