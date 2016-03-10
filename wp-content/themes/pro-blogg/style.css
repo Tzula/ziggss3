@@ -404,6 +404,10 @@ img { max-width: 100%; height: auto; }
 	border: 1px solid #dddddd;
 	margin-top:2px;
 }
+#single_comments_list{
+	display:none;
+	width:840px;
+}
 
 /**CONTENT
 * 加载首页内容模块css

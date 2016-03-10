@@ -43,21 +43,19 @@
 				
 			</article>
 				[<a id="single_comments" href="#">查看评论</a>]
-			
-				<!-- 评论弹框的隐藏显示js交互-->
+				
+				
 				<script type="text/javascript" src="./wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
 
 				<script>
 					$("#single_comments").click(function(){
 						alert(3333);
-						var $str = $("#single_comments_list").attr("as"); 
-						alert($str);
-						alert(5555);
+						alert($(".test").html());
 					});
 				
 				</script>
-
-				<div id="single_comments_list" style="display:none" as="23232">
+				<div class="test" style="display:none">YouToBe</div>
+				<div id="single_comments_list" >
 					<div class="clear"><hr></div>
 					<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 								<div class="home_blog_box">
@@ -109,7 +107,7 @@
 																<a href="'.get_permalink().'"><img src="'.catch_that_image().'" class="single_grid_post_img"></a>
 															</div>';
 												echo '<div class="single_grid_post_bottom">';
-													echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000">'.get_the_title().'</a></div>';
+													echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000">'.mb_strimwidth(get_the_title(),0,40,'……').'</a></div>';
 													//echo '<div class="single_grid_post_views">													<img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="15px";height="15px";>';
 													//echo '<span class="single_views">'; if(function_exists('the_views')) { echo the_views(); }
 													//echo '</span></div>';
@@ -119,7 +117,7 @@
 													break;
 											}
 											echo '<div class="single_grid_home_posts">
-														<p>'.dess_get_excerpt(120).'</p>
+														
 													</div>
 												</div>
 												';
