@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content='width=device-width, user-scalable=no, maximum-scale=1.0, initial-scale=1.0' name='viewport'>
+    <meta name="keywords" content="Japan，Japan news，lastest Japan news,trending Japan news" />
+<meta name="description" content="Orzzzz shares lastest Japan news and stories behind Japan news trending now, representing you trending Japan news in full coverage with videos and photos." />
+<title>Lastest Japan news | Orzzzz</title>
+                    <meta property="fb:admins" content="100008338832264"/>
+    <meta property="og:type" content="article" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" href="http://orzzzz.com/media/css/all.css?v=20160224184406" rel="stylesheet" />
+    <link type="text/css" href="http://orzzzz.com/media/css/media_screen.css?v=20160224184406" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://orzzzz.com/media/js/jquery.jcarousel.min.js?v=20160224184406"></script>
+    <script type="text/javascript" src="http://orzzzz.com/media/js/base.js?v=20160224184406"></script>
+    <script type="text/javascript" src="http://orzzzz.com/media/js/jquery.flexslider.js?v=20160224184406"></script>
+    <script type="text/javascript" src="http://orzzzz.com/media/js/jquery.touchy.min.js?v=20160224184406"></script>
+    <link rel="shortcut icon" href="/favicon.ico?v=20160224184406" type="image/x-icon" />
+        <!--[if IE]>
+    <script src="http://orzzzz.com/media/js/html5.js?v=20160224184406" type="text/javascript"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon-precomposed" href="media/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="media/images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="media/images/touch-icon-iphone4.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="media/images/touch-icon-ipad2.png">
+    <link rel="orzzzz" href="media/images/orzzzzicon.png">
+    <script type="text/javascript" src="http://orzzzz.com/media/js/bookmark_bubble.js?v=20160224184406"></script>
+    <script type="text/javascript">
+        window._taboola = window._taboola || [];
+        _taboola.push({article:'auto'});
+        !function (e, f, u) {
+            e.async = 1;
+            e.src = u;
+            f.parentNode.insertBefore(e, f);
+        }(document.createElement('script'),
+                document.getElementsByTagName('script')[0],
+                'http://cdn.taboola.com/libtrc/ngames-orzzzz/loader.js');
+    </script>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId="+'267701840084846';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+</head><body>
+<div id="fb-root"></div>
+<script type="text/javascript">
+    window.fbAsyncInit = function(){
+        FB.init({appId: '267701840084846', cookie: true, xfbml: true, oauth: true, channelUrl: 'http://funnymama.com/channel.html', 'version':'v2.3'});
+    };
+
+    //FB.init({appId: '267701840084846', cookie: true, xfbml: true, oauth: true, channelUrl: 'http://funnymama.com/channel.html'});
+    if (window.location.hash == '#_=_') {
+    window.location.hash = ''; // for older browsers, leaves a # behind
+    history.pushState('', document.title, window.location.pathname); // nice and clean
+    e.preventDefault(); // no page reload
+    }
+    $(function(){
+        $('.fb-login-js').click(function(){
+            FB.login(function(r){
+                if(r.authResponse) {
+                    window.location="/site/FacebookConnect?token="+r.authResponse.accessToken;
+                }
+                // if(r.authResponse){window.location=base_url + "connect/facebook.php"}
+            },{scope:'email'});
+        })
+    })
+
+</script>
+<div class="headsub">
+
+    <div class="user-login clearfix">
+                 <a href="javascript:void(0);" class="header-top-login fb-login-js"><span>f</span>Login with Facebook</a>
+            </div>
+
+    <ul class="menu clearfix">
+        <li><a href="/entertainment">Entertainment</a></li>
+        <li class="new"><a href="/acg">Acg</a></li>
+        <li><a href="/sports">Sports</a></li>
+        <li><a href="/world">World</a></li>
+        <li><a href="/life">Life</a></li>
+        <li><a href="/culture">Culture</a></li>
+        <li><a href="/tag/top_series">Top 10</a></li>
+        <li><a href="/tag/story_behind">Stories</a></li>
+    </ul>
+
+    <div class="headsub-search">
+        <form  onsubmit="javascript:do_search('mobile');return false;">
+            <input type="text" name="name"class="header-top-search" value="What are you looking for?" autocomplete="off">
+            <input type="submit" class="btn-top-search">
+        </form>
+    </div>
+
+    <div class="footer_content ">
+        <div class="copyright">
+            <a href="/about">About Orzzzz</a>|
+            <a href="/terms">Terms</a>|
+            <a href="/privacy">Privacy</a>|
+            <a href="/contact">Contact Us</a>
+        </div>
+        <div class="headsub-logo">
+            <a class="logo" href="http://orzzzz.com/">Trending news and hot topics</a>
+            <div class="fb-tw">
+                <a href="https://www.facebook.com/imorzzzz" target="_blank"><img src="http://orzzzz.com/media/images/top-fb.png"></a><a href="https://twitter.com/imorzzzz" target="_blank"><img src="http://orzzzz.com/media/images/top-twitter.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-content ">
+
+    <header>
+    <div class="header">
+
+    <ul class="header-menu clearfix">
+        <li><a href="http://orzzzz.com/" class="logo"></a></li>
+        <li class="submenu "><a href="/entertainment">Entertainment</a></li>
+        <li class="submenu new "><a href="/acg">Acg</a></li>
+        <li class="submenu "><a href="/sports">Sports</a></li>
+        <li class="submenu "><a href="/world">World</a></li>
+        <li class="submenu "><a href="/life">Life</a></li>
+        <li class="submenu "><a href="/culture">Culture</a></li>
+        <li class="submenu "><a href="/tag/top_series">Top 10</a></li>
+        <li class="submenu "><a href="/tag/story_behind">Stories</a></li>
+
+        <li class="other-info">
+            <a href="https://www.facebook.com/imorzzzz" target="_blank" class="fb-icon"></a>
+            <a href="https://twitter.com/imorzzzz" target="_blank" class="tw-icon"></a>
+            <a href="javascript:void(0);" class="search-icon search-click"></a>
+                        <a class="user-icon fb-login-js" href="javascript:;"></a>
+            
+            <div class="search-top">
+                <input type="text" placeholder="Search..." class="" name="query" id="query">
+                <i class="close">&#10005</i>
+                <em class="search-icon"></em>
+            </div>
+
+            
+        </li>
+    </ul>
+
+    <div class="icon-reorder"></div>
+    <a href="http://orzzzz.com/" class="mobile-logo"></a>
+</div>
+
+<script type="text/javascript">
+    $(".search-click").click(function(){
+        $(".search-top").show();
+    });
+    $(".search-top .close").click(function(){
+        $(".search-top").hide();
+    });
+</script>
+
+
+</header>
+
+<section class="main">
+    <div class="one_title">
+         <span><em><h1>Japan</h1></em></span>
+    </div>
+    <ul class="class-list" id="list-page">
+                <li class="brick-box brick-box-ad">
+            <div class="post">
+                <script type="text/javascript">
+    google_ad_client = "ca-pub-9036229855345617";
+    google_ad_slot = "2341598484";
+    google_ad_width = 300;
+    google_ad_height = 250;
+</script>
+<!-- OZCM_ACG_300x250A -->
+<script type="text/javascript"
+        src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>            </div>
+        </li>
+                <li class=brick-box>
+
+<div class="post">
+    <a href="/12-creepy-foreign-superheroes-wholl-make-you-proud-to-be-an-american.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/e1/1a/56cea85e4f050.jpg" alt="12 Creepy Foreign Superheroes Who'll Make You Proud To Be An American">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/acg">ACG</a>
+    </div>
+    <div class="post-info">
+        <a href="/ORZ" class="icon-orz"></a>
+        <p><a class="subtitle" href="/12-creepy-foreign-superheroes-wholl-make-you-proud-to-be-an-american.html">12 Creepy Foreign Superheroes Who'll Make You Proud To Be An American</a></p>
+        <p class="detail">Rapeman?Seriously?!</p>
+        <p class="text_right"><em class="hits">9894</em></p>
+    </div>
+</div>
+
+</li><li class=brick-box>
+
+<div class="post">
+    <a href="/11-inexplicable-moments-seen-on-asian-tv-game-shows.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/e4/62/56b043b4a8c77.gif" alt="11 Inexplicable Moments Seen on Asian TV Game Shows">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/entertainment">Entertainment</a>
+    </div>
+    <div class="post-info">
+        <a href="/WTF" class="icon-wtf"></a>
+        <p><a class="subtitle" href="/11-inexplicable-moments-seen-on-asian-tv-game-shows.html">11 Inexplicable Moments Seen on Asian TV Game Shows</a></p>
+        <p class="detail">Weird but funny.</p>
+        <p class="text_right"><em class="hits">29009</em></p>
+    </div>
+</div>
+
+</li><li class=brick-box>
+
+<div class="post">
+    <a href="/top-10-stupid-game-shows-will-make-you-think-wtf-while-you-lol.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/07/3f/56b06a09d444d.jpg" alt="Top 10 Stupid Game Shows Will Make You Think WTF While You LOL">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/entertainment">Entertainment</a>
+    </div>
+    <div class="post-info">
+        <a href="/WTF" class="icon-wtf"></a>
+        <p><a class="subtitle" href="/top-10-stupid-game-shows-will-make-you-think-wtf-while-you-lol.html">Top 10 Stupid Game Shows Will Make You Think WTF While You LOL</a></p>
+        <p class="detail">Things got really stupid.</p>
+        <p class="text_right"><em class="hits">4179</em></p>
+    </div>
+</div>
+
+</li><li class=brick-box>
+
+<div class="post">
+    <a href="/21-anime-girls-wearing-cat-keyhole-lingerie-is-everything-you-dreamed-of.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/d9/8d/56ac61ff1da99.jpg" alt="21 Anime Girls Wearing Cat Keyhole Lingerie Is Everything You Dreamed of ">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/life">LIFE</a>
+    </div>
+    <div class="post-info">
+        <a href="/ORZ" class="icon-orz"></a>
+        <p><a class="subtitle" href="/21-anime-girls-wearing-cat-keyhole-lingerie-is-everything-you-dreamed-of.html">21 Anime Girls Wearing Cat Keyhole Lingerie Is Everything You Dreamed of </a></p>
+        <p class="detail">Nya~</p>
+        <p class="text_right"><em class="hits">34796</em></p>
+    </div>
+</div>
+
+</li><li class=brick-box>
+
+<div class="post">
+    <a href="/top-10-weird-and-wacky-bras-japan-ever-made.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/67/2e/56ac506a8229e.jpg" alt="Top 10 Weird and Wacky Bras Japan Ever Made">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/life">LIFE</a>
+    </div>
+    <div class="post-info">
+        <a href="/ORZ" class="icon-orz"></a>
+        <p><a class="subtitle" href="/top-10-weird-and-wacky-bras-japan-ever-made.html">Top 10 Weird and Wacky Bras Japan Ever Made</a></p>
+        <p class="detail">We love you, Japan.</p>
+        <p class="text_right"><em class="hits">15863</em></p>
+    </div>
+</div>
+
+</li><li class=brick-box>
+
+<div class="post">
+    <a href="/this-naughty-cat-keyhole-bra-set-is-purrfect-for-cat-and-lingerie-lovers.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/94/65/56ac2403013f2.jpg" alt="This Naughty Cat Keyhole Bra Set Is Purrfect For Cat And Lingerie Lovers">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/life">LIFE</a>
+    </div>
+    <div class="post-info">
+        <a href="/ORZ" class="icon-orz"></a>
+        <p><a class="subtitle" href="/this-naughty-cat-keyhole-bra-set-is-purrfect-for-cat-and-lingerie-lovers.html">This Naughty Cat Keyhole Bra Set Is Purrfect For Cat And Lingerie Lovers</a></p>
+        <p class="detail">Purrrfect!!!</p>
+        <p class="text_right"><em class="hits">7128</em></p>
+    </div>
+</div>
+
+</li><li class=brick-box>
+
+<div class="post">
+    <a href="/top-10-most-adorable-creatures-in-hayao-miyazakis-films.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/5e/3f/568dec72e8719.gif" alt="Top 10 Most Adorable Creatures in Hayao Miyazaki's Films">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/acg">ACG</a>
+    </div>
+    <div class="post-info">
+        <a href="/WOW" class="icon-wow"></a>
+        <p><a class="subtitle" href="/top-10-most-adorable-creatures-in-hayao-miyazakis-films.html">Top 10 Most Adorable Creatures in Hayao Miyazaki's Films</a></p>
+        <p class="detail">A legendary anime film maker.</p>
+        <p class="text_right"><em class="hits">9908</em></p>
+    </div>
+</div>
+
+</li><li class=brick-box>
+
+<div class="post">
+    <a href="/happy-birthday-japanese-animation-legend-hayao-miyazaki-turns-75-today.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/c1/09/568ddd5d50ec2.jpg" alt="Happy Birthday! Japanese Animation Legend Hayao Miyazaki Turns 75 Today">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/acg">ACG</a>
+    </div>
+    <div class="post-info">
+        <a href="/HUH" class="icon-huh"></a>
+        <p><a class="subtitle" href="/happy-birthday-japanese-animation-legend-hayao-miyazaki-turns-75-today.html">Happy Birthday! Japanese Animation Legend Hayao Miyazaki Turns 75 Today</a></p>
+        <p class="detail">Japanese Walt Disney.</p>
+        <p class="text_right"><em class="hits">1414</em></p>
+    </div>
+</div>
+
+</li><li class=brick-box>
+
+<div class="post">
+    <a href="/new-bizarre-trend-is-squishing-babies-faces-to-look-like-japanese-rice-balls.html" class="imginfo">
+        <img src="http://s.orzzzz.com/news/3e/32/566e3b873a069.jpg" alt="New Bizarre Trend Is Squishing Babies' Faces to Look Like Japanese Rice Balls">
+    </a>
+    <div class="imgmessage clearfix">
+        <a href="/world">World</a>
+    </div>
+    <div class="post-info">
+        <a href="/AHA" class="icon-aha"></a>
+        <p><a class="subtitle" href="/new-bizarre-trend-is-squishing-babies-faces-to-look-like-japanese-rice-balls.html">New Bizarre Trend Is Squishing Babies' Faces to Look Like Japanese Rice Balls</a></p>
+        <p class="detail">Kawaii!</p>
+        <p class="text_right"><em class="hits">2581</em></p>
+    </div>
+</div>
+
+</li>    </ul>
+        <div class="more-list" id="Pagenav"><span><a href="?page=2" class="next"></a></span></div>
+    </section>
+
+<script type="text/javascript">
+    $(window).scroll(function(){
+        var SCTop=$(window).scrollTop();
+        if(SCTop>470){
+            $(".fixed-header").show();
+            $(".fixed-header").css({"position":"fixed", "top":"0", "left":"0"});
+        }
+        else{
+            $(".fixed-header").hide();
+            $(".fixed-header").css({"position":"inherit", "top":"auto", "left":"auto"});
+        }
+    });
+
+    $(function() {
+        var $container = $('#list-page');
+
+        $container.infinitescroll({
+            navSelector: "#Pagenav",
+            nextSelector: "#Pagenav a.next",
+            itemSelector: ".brick-box",
+            animate: true,
+            maxPage:'20',
+            loading: {
+                msgText: "<em>Loading the next set of news...</em>",
+                finishedMsg: 'No More Games To Load.',
+                img: 'http://games.la/media/images/pagesloading.gif'
+            }
+        }, function(newElems) {
+            var $newElems = $(newElems);
+            $container.masonry('appended', $newElems);
+        });
+
+    });
+</script>    <footer>
+    <div class="footer_content clearfix">
+
+        <div class="copyright">
+            <a href="/about">About Orzzzz</a>|
+            <a href="/terms">Terms</a>|
+            <a href="/privacy">Privacy</a>|
+            <a href="/contact">Contact Us</a>
+        </div>
+        <div class="footer-left">
+            <a href="http://orzzzz.com/" class="logo">Trending news and stories behind</a>
+            <div class="fb-tw">
+                <a href="https://www.facebook.com/imorzzzz" target="_blank"><img src="http://orzzzz.com/media/images/top-fb.png"></a> <a href="https://twitter.com/imorzzzz" target="_blank"><img src="http://orzzzz.com/media/images/top-twitter.png"></a>
+            </div>
+        </div>
+
+        <div class="footer_links">
+            <li><a href="http://orzzzz.com/">NEWS</a></li>
+            <li><a href="/tag/top_series">TOP 10</a></li>
+            <li><a href="/tag/story_behind">STORIES</a></li>
+            <li><a href="/entertainment">ENTERTAINMENT</a></li>
+            <li><a href="/sports">SPORTS</a></li>
+        </div>
+        <div class="footer_links">
+            <li><a href="/world">WORLD</a></li>
+            <li><a href="/life">LIFE</a></li>
+            <li><a href="/culture">CULTURE</a></li>
+            <li><a href="/tag/movies">MOVIES</a></li>
+            <li><a href="/tag/games">GAMES</a></li>
+        </div>
+        <div class="footer_links">
+            <li><a href="/tag/tech">TECH</a></li>
+            <li><a href="/tag/business">BUSINESS</a></li>
+            <li><a href="/tag/tv">TV</a></li>
+            <li><a href="/tag/music">MUSIC</a></li>
+            <li><a href="/tag/Comics">COMICS</a></li>
+        </div>
+        <div class="footer_links">
+            <li><a href="/tag/politics">POLITICS</a></li>
+            <li><a href="/about">ABOUT ORZZZZ</a></li>
+            <li><a href="/terms">TERMS</a></li>
+            <li><a href="/privacy">PRIVACY POLICY</a></li>
+            <li><a href="/contact">CONTACT US</a></li>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+
+<div id="back_top"></div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53039702-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+    $("#query").bind('keydown', function (e) {
+        if(e.which == 13) {
+            do_search('pc');
+        }
+    });
+
+    function do_search(sign) {
+            var searchTmp = "/search/_tempString";
+            //  var kw = $(this).val();
+           if(sign == 'pc'){
+               var kw = $.trim($('#query').val());
+           }else{
+               var kw = $.trim($('.header-top-search').val());
+           }
+
+            var reg =/(\W+)/g;
+            var kw = kw.replace(reg, '_');
+            var kw = kw.replace(/^_+|_+$/, '');
+            var kw = kw.toLowerCase();
+            if(!kw || kw=="search") {
+                alert('Please input a keyword');
+                return false;
+            }
+            u = searchTmp.replace('_tempString', encodeURIComponent(kw));
+            location.href = u;
+            return true;
+    }
+</script>
+
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({flush: true});
+</script>
+
+
+    <div class="contentcover"></div>
+</div>
+</body>
+</html>
