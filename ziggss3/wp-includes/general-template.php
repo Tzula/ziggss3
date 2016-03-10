@@ -45,6 +45,32 @@ function get_header( $name = null ) {
 	if ('' == locate_template($templates, true))
 		load_template( ABSPATH . WPINC . '/theme-compat/header.php');
 }
+function get_homeContent( $name = null ) {
+	/**
+	 * Fires before the header template file is loaded.
+	 *
+	 * The hook allows a specific header template file to be used in place of the
+	 * default header template file. If your file is called header-new.php,
+	 * you would specify the filename in the hook as get_header( 'new' ).
+	 *
+	 * @since 2.1.0
+	 * @since 2.8.0 $name parameter added.
+	 *
+	 * @param string $name Name of the specific header file to use.
+	 */
+	do_action( 'get_homeContent', $name );
+
+	$templates = array();
+	$name = (string) $name;
+	if ( '' !== $name )
+		$templates[] = "header-{$name}.php";
+
+	$templates[] = 'homeContent.php';
+
+	// Backward compat code will be removed in a future release
+	if ('' == locate_template($templates, true))
+		load_template( ABSPATH . WPINC . '/theme-compat/homeContent.php');
+}
 
 /**
  * Load footer template.
@@ -2432,6 +2458,14 @@ function wp_head() {
 	 * @since 1.5.0
 	 */
 	do_action( 'wp_head' );
+}
+function wp_homeContent() {
+	/**
+	 * Print scripts or data in the head tag on the front end.
+	 *
+	 * @since 1.5.0
+	 */
+	do_action( 'wp_homeContent' );
 }
 
 /**
