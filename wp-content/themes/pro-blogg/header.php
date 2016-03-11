@@ -15,22 +15,8 @@
 				<img src="./wp-content/themes/pro-blogg/images/web-logo.png" width="150px" height="150px">
 			</div>
 			<div class="container">
-			<div class="head_search">
-				<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-					<label>
-						<span class="screen-reader-text">Search for:</span>
-						<input type="text" class="search-field" placeholder="Search" value="<?php echo get_search_query() ?>" name="s" />
-						<input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/search-icon.jpg">
-					</label>
-				</form>
-			</div>
-			
-				<div class="head-nav">
-					<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-				</div>
-				<div class="head-search">
-					<?php get_search_form(); ?>
-				</div>
+			<div class="head_right">
+				<!-- 将社交链接放置在搜索框上方-->
 				<div class="head-socials">
 					<ul>
 						<?php
@@ -44,6 +30,25 @@
 						?>
 					</ul>
 				</div>
+				<!-- 社交链接程序结束-->
+				<div class="head_search">
+					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+						<label>
+							<span class="screen-reader-text">Search for:</span>
+							<input type="text" class="search-field" placeholder="Search" value="<?php echo get_search_query() ?>" name="s" />
+							<input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/search-icon.jpg">
+						</label>
+					</form>
+				</div>
+			</div>
+			
+				<div class="head-nav">
+					<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+				</div>
+				<div class="head-search">
+					<?php get_search_form(); ?>
+				</div>
+				
 				<div class="clear"></div>
 			</div>
 		</div>
