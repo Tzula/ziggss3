@@ -271,7 +271,7 @@ img { max-width: 100%; height: auto; }
 .slicknav_menu ul li ul li a:hover,
 .slicknav_nav .slicknav_row:hover { background: #333; color: #fff !important; border-radius: 0; }
 .head_right{
-	float:left;
+	float:right;
 	max-width:400px;
 	margin-right:50x;
 	height:80px;

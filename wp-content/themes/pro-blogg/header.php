@@ -18,6 +18,7 @@
 			<div class="head_right">
 				<!-- 将社交链接放置在搜索框上方-->
 				<div class="head-socials">
+				dafdafsadfgdgdsgsgsrhrhsarhthht
 					<ul>
 						<?php
 							$socials = array('twitter','facebook','google-plus','instagram','pinterest','vimeo','youtube','linkedin');
