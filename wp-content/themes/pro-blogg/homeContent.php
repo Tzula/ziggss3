@@ -7,7 +7,7 @@
 				<?php
 					$args2 = array(
 					'post_type' => 'post',
-					'posts_per_page' => 6,
+					'posts_per_page' => 29,
 					'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 					);
 					$query = new WP_Query( $args2 );
@@ -31,16 +31,15 @@
 										//用于解决第三块放置广告位
 										echo '<div class="hr"><hr/></div>';
 										echo '<div class="home_ad_site">AD Site';
-										echo '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-											<!-- orzzzz index 300250 -->
-											<ins class="adsbygoogle"
-												 style="display:block"
-												 data-ad-client="ca-pub-3742939967040468"
-												 data-ad-slot="4279942831"
-												 data-ad-format="auto"></ins>
-											<script>
-											(adsbygoogle = window.adsbygoogle || []).push({});
-											</script>';
+										echo '<script async		src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+										<!-- orzzzz indexpage 300250 -->
+										<ins class="adsbygoogle"
+											 style="display:inline-block;width:300px;height:250px"
+											 data-ad-client="ca-pub-3742939967040468"
+											 data-ad-slot="8884939235"></ins>
+										<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+										</script>';
 										echo '</div>';
 										//广告位结束
 										echo '<div class="hr"><hr/></div>';
