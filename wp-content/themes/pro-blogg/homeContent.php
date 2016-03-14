@@ -30,7 +30,7 @@
 									if ($index == 2) {
 										//用于解决第三块放置广告位
 										echo '<div class="hr"><hr/></div>';
-										echo '<div class="home_ad_site">AD Site';
+										echo '<div class="home_ad_site">';
 										echo '<script async		src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 										<!-- orzzzz indexpage 300250 -->
 										<ins class="adsbygoogle"
@@ -44,7 +44,7 @@
 										//广告位结束
 										echo '<div class="hr"><hr/></div>';
 										echo '<div class="grid_post_img" >
-													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;"></a>
+													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;position:absolute;" class="home_grid_post_img"></a>
 												</div>';
 										echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
 										echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
@@ -55,7 +55,7 @@
 									} else {
 										echo '<div class="hr"><hr/></div>';
 										echo '<div class="grid_post_img" >
-													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;"></a>
+													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
 												</div>';
 										echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
 										echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
