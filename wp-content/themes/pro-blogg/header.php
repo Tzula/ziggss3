@@ -12,7 +12,7 @@
 		<div class="head-top">	
 		<!--放置网站logo -->
 			<div class="web-logo">
-				<img src="./wp-content/themes/pro-blogg/images/web-logo.png" width="150px" height="150px">
+				<img src="./wp-content/uploads/2016/03/web-logo.png" width="150px" height="150px">
 			</div>
 			<div class="container">
 			<div class="head_right">

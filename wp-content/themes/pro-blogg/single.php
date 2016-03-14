@@ -91,7 +91,7 @@
 		</div>
 		<div class="include_homeContent" >
 				
-				<div class="single_one_title" style="font-family:'Roboto',sans-serif;font-size:25px;font-weight:900;"><img src="./wp-content/themes/pro-blogg/images/moretrendingnews.png" width="850px" height:30px;></div>
+				<div class="single_one_title" style="font-family:'Roboto',sans-serif;font-size:25px;font-weight:900;"><img src="./wp-content/uploads/2016/03/moretrendingnews.png" width="850px" height:30px;></div>
 				<div class="single_content" style="margin-left:auto;margin-right:auto;">
 					<div class="single_container">
 						<div class="single_post_content">
@@ -172,7 +172,7 @@
 		</script>
 		</div>
 		<div class="single_sidebar_one_title" style="font-family:'Roboto',sans-serif;font-size:30px;font-weight:700px;">
-		<img src="./wp-content/themes/pro-blogg/images/whathot.png" width="305px" height:30px;>
+		<img src="./wp-content/uploads/2016/03/whathot.png" width="305px" height:30px;>
 		</div>
 		<ul class="asidepost-list">  
 		<?php if (function_exists('get_most_viewed')): ?>   
