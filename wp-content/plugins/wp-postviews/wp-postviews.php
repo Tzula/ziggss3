@@ -287,6 +287,10 @@ if(!function_exists('get_least_viewed_category')) {
 	}
 }
 ### Function: Get TimeSpan Most Viewed - Added by Paolo Tagliaferri (http://www.vortexmind.net - webmaster@vortexmind.net)
+/*
+*此处用于文章详情页 --热门文章--内容的获取
+*/
+
 function get_timespan_most_viewed($mode = '', $limit = 10, $days = 7, $display = true) {
 	global $wpdb, $post;	
 	$limit_date = current_time('timestamp') - ($days*86400); 
@@ -319,7 +323,7 @@ function get_timespan_most_viewed($mode = '', $limit = 10, $days = 7, $display =
 		
 		foreach ($hots as $key => $hot) {
 			$thumb =  '<img src="'.$hot['img_Url'].'" alt="暂无特色图片" width="300px">';  
-			$temp .= '<li style="list-style-type:none;" class="asidepost-list-li"><div class="hot_post"><a href="'.get_permalink().'" class="hot_imginfo">'.$thumb.'</a><div class="hot_post_info"><a class="hot_subtitle" href="'.get_permalink().'" ><h3>'.mb_strimwidth($hot['post_title'],0,40,'……').'<h3></a>'.__('', 'wp-postviews').'</div></div></li>';
+			$temp .= '<li style="list-style-type:none;" class="asidepost-list-li"><div class="hot_post"><a href="'.get_permalink().'" class="hot_imginfo">'.$thumb.'</a><div class="hot_post_info"><a class="hot_subtitle" href="'.get_permalink().'" ><h3>'.mb_strimwidth($hot['post_title'],0,56,'').'<h3></a>'.__('', 'wp-postviews').'</div></div></li>';
 
 		}
 

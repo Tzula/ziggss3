@@ -42,7 +42,7 @@
 				<?php the_tags( '<div class="post_tags">Tags: ', ', ', '</div>' ); ?> 
 				
 			</article>
-				[<a id="single_comments" href="#">查看评论</a>]
+				[<a id="single_comments" href="#">Show Comment</a>]
 				
 				
 				<script type="text/javascript" src="./wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
@@ -56,6 +56,7 @@
 				</script>
 				<div class="test" style="display:none">YouToBe</div>
 				<div id="single_comments_list" >
+
 					<div class="clear"><hr></div>
 					<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 								<div class="home_blog_box">
@@ -70,7 +71,6 @@
 			endwhile;
 			?>
 			</div>
-		</div>
 		<!--博客详情部分添加300*250广告位 -->
 		<div class="single_srticle_bottom_ad_site">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -83,13 +83,15 @@
 			(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
 		</div><br/><br/>
+		</div>
+		
 		<hr>
 		<div class="guess_you_like">
 			May be you like ~ ~ ~
 		</div>
 		<div class="include_homeContent" >
 				
-				<div class="single_one_title"><strong><span><em>More Trending News</em></span></strong></div>
+				<div class="single_one_title" style="font-family:'Roboto',sans-serif;font-size:25px;font-weight:900;"><img src="./wp-content/themes/pro-blogg/images/moretrendingnews.png" width="850px" height:30px;></div>
 				<div class="single_content" style="margin-left:auto;margin-right:auto;">
 					<div class="single_container">
 						<div class="single_post_content">
@@ -98,7 +100,7 @@
 								<?php
 									$args2 = array(
 									'post_type' => 'post',
-									'posts_per_page' => 6,
+									'posts_per_page' =>6,
 									'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 									);
 									$query = new WP_Query( $args2 );
@@ -169,7 +171,9 @@
 			(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
 		</div>
-		<div class="single_sidebar_one_title"><strong><span><em><h2>What's Hot</h2></em></span></strong></div>
+		<div class="single_sidebar_one_title" style="font-family:'Roboto',sans-serif;font-size:30px;font-weight:700px;">
+		<img src="./wp-content/themes/pro-blogg/images/whathot.png" width="305px" height:30px;>
+		</div>
 		<ul class="asidepost-list">  
 		<?php if (function_exists('get_most_viewed')): ?>   
 		<?php get_timespan_most_viewed('post',10,7, true); ?>   

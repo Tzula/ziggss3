@@ -61,7 +61,6 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
   font-weight: 500;
   margin: 10px 0 0px 0;
   text-align: center;
-  border-bottom: 1px #dfdfdf solid;
   width: 300px;
 }
 .single_sidebar_one_title span {
@@ -97,7 +96,7 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
 }
 .hot_imginfo img{
     border-top-style: solid;
-    border-top-color: rgb(0, 183, 238);
+    border-top-color: #089E00;
 	transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: initial;
@@ -114,6 +113,7 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
 	color:#fff;
 	text-align:left;
 	max-height:60px;
+	overflow:hidden;
 
 }
 .hot_post_info a:link{
@@ -327,7 +327,7 @@ img { max-width: 100%; height: auto; }
 .home_posts .grid_post { width: 325px; margin: 0 0 10px; }
 .home_posts .grid_post h3 a:hover { text-decoration: underline; }
 .home_posts .grid_post .grid_post_img { overflow: hidden; height:203px;width:325px;  border-top-style: solid;
-  border-top-color: rgb(0, 183, 238);transition-property: all;
+  border-top-color: #089E00;transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: initial;
   transition-delay: initial;
@@ -347,6 +347,38 @@ img { max-width: 100%; height: auto; }
   width: 100%; height: 215px;
 }
 .content .container {  overflow: hidden; }
+/*
+*此处设置首页内容图片左上角的类别
+*/
+.clearfix:after {
+  display: block;
+  content: 'clear';
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+}
+.imgmessage a {
+  padding: 10 5px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #089E00;
+  float: left;
+}
+.imgmessage {
+  position: absolute;
+  color: #fff;
+  background: none;
+  left: 0;
+  top: 18px;
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+
+
 /**BLOG**/
 .post_content .blog_post_box { padding: 0 0 35px; 
   margin: 0 0 45px; text-align: center; }
@@ -435,7 +467,6 @@ img { max-width: 100%; height: auto; }
   font-weight: 500;
   margin: 10px 0 30px 0;
   text-align: center;
-  border-bottom: 1px #dfdfdf solid;
   width: 840px;
 }
 .single_one_title span {
@@ -546,7 +577,6 @@ article.post_box, .blog_posts { width: 760px; }
 .post_content input[type="text"],
 .post_content input[type="email"],
 .post_content input[type="password"],
-.post_content input[type="search"],
 .post_content input[type="phone"] { 
   width: 300px; height: 40px; 
   border: 2px solid #ddd; background: #f5f5f5; 
@@ -562,6 +592,18 @@ article.post_box, .blog_posts { width: 760px; }
   display: block;
   text-align: center;
 }
+
+/*
+*头部搜索框css设置
+*
+*/
+.post_content input[type="search"]{ 
+	  width: 260px; height: 40px; 
+	  border: 2px solid #ddd; background: #f5f5f5; 
+	  box-sizing: border-box; padding: 5px 10px; 
+	  margin: 0 0 5px;
+}
+  
 .load_more_text a {
   background: #000000 none repeat scroll 0 0;
   color: #ffffff;
@@ -594,7 +636,6 @@ article.post_box, .blog_posts { width: 760px; }
   input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="search"],
 input[type="phone"] { width: 300px; 
   height: 40px; border: 2px solid #ddd; 
   background: #fff; box-sizing: border-box; 
@@ -602,6 +643,18 @@ input[type="phone"] { width: 300px;
   input[type="submit"], button { padding: 5px 10px; 
   background: #000; color: #fff; text-transform: uppercase; 
   border: none; margin: 0 0 5px; cursor: pointer; }
+
+/*
+*搜索框css规则
+*/
+
+input[type="search"]{
+  width: 260px; 
+  height: 40px; border: 2px solid #ddd; 
+  background: #fff; box-sizing: border-box; 
+  padding: 5px 10px; margin: 0 0 5px; 
+ }
+
 
 /**WIDGETS
 *小工具栏部分

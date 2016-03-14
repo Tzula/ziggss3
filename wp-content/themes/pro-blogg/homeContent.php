@@ -19,6 +19,11 @@
 							$query->the_post();
 							echo '<div class="grid_post">';
 							$type = get_post_meta($post->ID,'page_featured_type',true);
+							$categories = get_the_category($post->ID);
+
+							//将object的对象转化成数组get_obhect_vars();
+							$categories = get_object_vars($categories[0]);
+
 				 			switch ($type) {
 				 				case 'youtube':
 				 					echo '<iframe width="560" height="315" src="http://www.youtube.com/embed/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?wmode=transparent" frameborder="0" allowfullscreen></iframe>';
@@ -46,6 +51,7 @@
 										echo '<div class="grid_post_img" >
 													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;position:absolute;" class="home_grid_post_img"></a>
 												</div>';
+										echo '<div class="imgmessage clearfix" style="top:323px"><a href="./life">'.$categories['name'].'</a></div>';
 										echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
 										echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
 										echo '<span class="views">'; if(function_exists('the_views')) { echo the_views(); }
@@ -56,7 +62,9 @@
 										echo '<div class="hr"><hr/></div>';
 										echo '<div class="grid_post_img" >
 													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
+												
 												</div>';
+										echo '<div class="imgmessage clearfix"><a href="./'.$categories['name'].'">'.$categories['name'].'</a></div>';
 										echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
 										echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
 										echo '<span class="views">'; if(function_exists('the_views')) { echo the_views(); }
