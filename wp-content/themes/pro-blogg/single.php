@@ -1,7 +1,7 @@
 <?php
  get_header();
 ?>
-<div class="single">
+<div class="single" style="align:center"> 
 <div class="single_content">  
 	<div class="single_container">
 		<div class="single_post_content">
@@ -71,6 +71,18 @@
 			?>
 			</div>
 		</div>
+		<!--博客详情部分添加300*250广告位 -->
+		<div class="single_srticle_bottom_ad_site">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- orzzz content bottom 300250 -->
+			<ins class="adsbygoogle"
+				 style="display:inline-block;width:300px;height:250px"
+				 data-ad-client="ca-pub-3742939967040468"
+				 data-ad-slot="4315138836"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div><br/><br/>
 		<hr>
 		<div class="guess_you_like">
 			May be you like ~ ~ ~
@@ -107,10 +119,8 @@
 																<a href="'.get_permalink().'"><img src="'.catch_that_image().'" class="single_grid_post_img"></a>
 															</div>';
 												echo '<div class="single_grid_post_bottom">';
-													echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000">'.mb_strimwidth(get_the_title(),0,40,'……').'</a></div>';
-													//echo '<div class="single_grid_post_views">													<img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="15px";height="15px";>';
-													//echo '<span class="single_views">'; if(function_exists('the_views')) { echo the_views(); }
-													//echo '</span></div>';
+													echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000"><h3>'.mb_strimwidth(get_the_title(),0,40,'……').'</h3></a></div>';
+													
 												echo '</div>';
 
 
