@@ -19,7 +19,7 @@
 							<h1><?php the_title(); ?></h1>
 							<hr>
 							<?php the_content(); ?>
-							//默认隐藏文章的评论
+							<!--默认隐藏文章的评论-->
 							[<a id="single_comments" href="#">Show Comment</a>]
 							<script type="text/javascript" src="./wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
 							<script>
@@ -29,7 +29,7 @@
 								});
 							
 							</script>
-							<div class="single_comments_list">
+							<div class="single_comments_list" style="display:no">
 								<div class="clear"><hr></div>
 								<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 									<div class="home_blog_box">
