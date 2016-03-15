@@ -325,7 +325,7 @@ function pagination($query_string){
 	global $posts_per_page, $paged;   
 	$my_query = new WP_Query($query_string ."&posts_per_page=-1");   
 	
-	$total_posts = $my_query->post_count;  var_dump($total_posts);exit; 
+	$total_posts = $my_query->post_count;
 	if(empty($paged))
 		$paged = 1;   
 		$prev = $paged - 1;   
