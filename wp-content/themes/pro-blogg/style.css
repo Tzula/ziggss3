@@ -436,9 +436,9 @@ img { max-width: 100%; height: auto; }
 *.single{float:left;width:1265px;height:auto;}
 */
 .single{margin-left:auto;margin-left:auto;position:relative;}
-.single_content { overflow: hidden; margin-left: 80px; width:850px;float:left;}
+.single_content { overflow: hidden; margin-left: 80px; width:850px;float:left;word-wrap:break-word;}
 .single_container { width: 850px;  float:left;overflow:hidden;}
-.single_post_content { width: 850px; float: left; color: #333; padding: 10px 5px 15px; }
+.single_post_content { width: 850px; float: left; color: #333; padding: 10px 5px 15px;word-wrap:break-word;}
 .single_post_content > article { overflow: hidden; }
 .single_srticle_ad_site{
 	width:320px;

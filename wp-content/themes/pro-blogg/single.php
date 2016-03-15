@@ -157,30 +157,32 @@
 			
 		</div>
     </div>
+
+	<div class="single_sidebar">
+			<!--边栏广告位-->
+			<div class="single_sidebar_ad_site">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- orzzzz content 300*600 -->
+				<ins class="adsbygoogle"
+					 style="display:inline-block;width:300px;height:600px"
+					 data-ad-client="ca-pub-3742939967040468"
+					 data-ad-slot="7373010037"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			</div>
+			<div class="single_sidebar_one_title" style="font-family:'Roboto',sans-serif;font-size:30px;font-weight:700px;">
+			<img src="/wp-content/uploads/2016/03/whathot.png" width="305px" height:30px;>
+			</div>
+			<ul class="asidepost-list">  
+			<?php if (function_exists('get_most_viewed')): ?>   
+			<?php get_timespan_most_viewed('post',10,7, true); ?>   
+			<?php endif; ?>  
+			</ul>
+	</div>
+	</div>
 </div>
-<div class="single_sidebar">
-		<!--边栏广告位-->
-		<div class="single_sidebar_ad_site">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- orzzzz content 300*600 -->
-			<ins class="adsbygoogle"
-				 style="display:inline-block;width:300px;height:600px"
-				 data-ad-client="ca-pub-3742939967040468"
-				 data-ad-slot="7373010037"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-		</div>
-		<div class="single_sidebar_one_title" style="font-family:'Roboto',sans-serif;font-size:30px;font-weight:700px;">
-		<img src="/wp-content/uploads/2016/03/whathot.png" width="305px" height:30px;>
-		</div>
-		<ul class="asidepost-list">  
-		<?php if (function_exists('get_most_viewed')): ?>   
-		<?php get_timespan_most_viewed('post',10,7, true); ?>   
-		<?php endif; ?>  
-		</ul>
-</div>
-</div>
+
 <?php
 get_footer();
 ?>
