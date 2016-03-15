@@ -347,4 +347,4 @@ function pagination($query_string){
 	echo ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) ? "<a href='".get_pagenum_link($pages)."'>最后</a>":"";   
 	echo "</div>\n";   
 	}   
-}  
+}   
