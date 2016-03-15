@@ -312,11 +312,11 @@ function catch_that_image() {
 	
 	$str = get_the_content();
 
-$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $str, $matches);//用正则过滤文章
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $str, $matches);//用正则过滤文章
 
 	$first_img = $matches[1][0];
 	return $first_img;
-} ;
+}
 
 /*
 *分页
