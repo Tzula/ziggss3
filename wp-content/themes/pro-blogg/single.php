@@ -1,4 +1,4 @@
-ï»¿<?php
+<?php
  get_header();
 ?> 
 <div class="single" >
@@ -19,7 +19,7 @@
 							<h1><?php the_title(); ?></h1>
 							<hr>
 							<?php the_content(); ?>
-							<!--Ä¬ÈÏÒþ²ØÎÄÕÂµÄÆÀÂÛ-->
+							<!--è¯„è®ºé»˜è®¤éšè—-->
 							[<a id="single_comments" href="#">Show Comment</a>]
 							<script type="text/javascript" src="./wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
 							<script>
@@ -29,7 +29,7 @@
 								});
 							
 							</script>
-							<div class="single_comments_list" style="display:no">
+							<div class="single_comments_list" style="display:none">
 								<div class="clear"><hr></div>
 								<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 									<div class="home_blog_box">
@@ -43,7 +43,7 @@
 								<?php endif;?>
 							</div>
 							
-							<!--²©¿ÍÏêÇé²¿·ÖÌí¼Ó300*250¹ã¸æÎ» -->
+							<!--å†…å®¹éƒ¨åˆ†åº•éƒ¨å¹¿å‘Š -->
 							<div class="single_srticle_ad_site">
 								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 									<!-- orzzzz content 300250 -->
@@ -55,7 +55,7 @@
 									(adsbygoogle = window.adsbygoogle || []).push({});
 								</script>
 							</div>
-							<!-- Ò»ÏÂÎª·ÖÒ³-->
+							<!--å†…å®¹éƒ¨åˆ†åº•éƒ¨å¹¿å‘Šç»“æŸ-->
 							<?php
 								wp_link_pages(array(
 									'before' => '<div class="link_pages">'.__('Pages', 'pro-blogg'),
@@ -71,24 +71,11 @@
 					<?php endwhile; ?>
 				</div>
 			</div>
-			<!--²©¿ÍÏêÇé²¿·ÖÌí¼Ó300*250¹ã¸æÎ» -->
-			<div class="single_srticle_bottom_ad_site">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- orzzz content bottom 300250 -->
-				<ins class="adsbygoogle"
-					 style="display:inline-block;width:300px;height:250px"
-					 data-ad-client="ca-pub-3742939967040468"
-					 data-ad-slot="4315138836"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div><br/><br/>
-			</div>
-			<hr>
+			<!--<hr>
 			<div class="guess_you_like">
 				May be you like ~ ~ ~
 			</div>
-			<!--ÒýÈëÊ×Ò³ÄÚÈÝ -->
+			<!--å¼•å…¥é¦–é¡µéƒ¨åˆ†å†…å®¹ -->
 			<div class="include_homeContent">
 				<div class="single_one_title">
 					<img src="/wp-content/uploads/2016/03/moretrendingnews.png" width="850px" height:30px;>
@@ -120,7 +107,7 @@
 													echo '<div class="single_grid_post_img" >
 																<a href="'.get_permalink().'"><img src="'.catch_that_image().'" class="single_grid_post_img"></a></div>';
 													echo '<div class="single_grid_post_bottom">';
-													echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000"><h3>'.mb_strimwidth(get_the_title(),0,40,'¡­¡­').'</h3></a></div>';
+													echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000"><h3>'.mb_strimwidth(get_the_title(),0,40,'ï¿½ï¿½ï¿½ï¿½').'</h3></a></div>';
 													echo '</div>';  //end class="single_grid_post_bottom"
 													break;
 											}
@@ -140,13 +127,14 @@
 								endif;?>
 								<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
 							</div>
+							<div class="single_clear"></div>
 						</div>
 					</div>
 				</div>
 			</div>		
 	</div>
 	<div class="single_sidebar">
-		<!--ÓÒ±ßÀ¸¶¥²¿¹ã¸æÎ» -->
+		<!--å³è¾¹æ é¡¶éƒ¨å¹¿å‘Š -->
 		<div class="single_sidebar_ad_site">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- orzzzz content 300*600 -->
@@ -158,7 +146,7 @@
 				(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
 		</div>
-		<!--ÓÒ±ßÀ¸ÈÈÃÅÎÄÕÂ -->	
+		<!--å³è¾¹æ -->	
 		<div class="single_sidebar_one_title">
 			<img src="/wp-content/uploads/2016/03/whathot.png" width="305px" height:30px;>	
 			<ul class="asidepost-list">  
