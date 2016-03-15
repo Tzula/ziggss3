@@ -1,4 +1,4 @@
-<?php
+﻿<?php
  get_header();
 ?> 
 <div class="single" >
@@ -18,6 +18,18 @@
 							<div class="clear"></div>
 							<h1><?php the_title(); ?></h1>
 							<hr>
+							<!--博客详情部分添加300*250广告位 -->
+							<div class="single_srticle_ad_site">
+								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+									<!-- orzzzz content 300250 -->
+									<ins class="adsbygoogle"
+										 style="display:inline-block;width:300px;height:250px"
+										 data-ad-client="ca-pub-3742939967040468"
+										 data-ad-slot="2803209634"></ins>
+									<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
 							<?php the_content(); ?>
 							<!--评论默认隐藏-->
 							[<a id="single_comments" href="#">Show Comment</a>]
@@ -43,7 +55,7 @@
 								<?php endif;?>
 							</div>
 							
-							<!--内容部分底部广告 -->
+							<!--博客详情部分添加300*250广告位-->
 							<div class="single_srticle_ad_site">
 								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 									<!-- orzzzz content 300250 -->
@@ -68,13 +80,14 @@
 							
 							
 						</article>
+						<hr>
+						<div class="guess_you_like">
+							May be you like ~ ~ ~
+						</div>
 					<?php endwhile; ?>
 				</div>
 			</div>
-			<!--<hr>
-			<div class="guess_you_like">
-				May be you like ~ ~ ~
-			</div>
+			
 			<!--引入首页部分内容 -->
 			<div class="include_homeContent">
 				<div class="single_one_title">
@@ -147,7 +160,7 @@
 			</script>
 		</div>
 		<!--右边栏-->	
-		<div class="single_sidebar_one_title">
+		<div class="single_sidebar_one_title" style="font-family:'Roboto',sans-serif;font-size:30px;font-weight:700px;">
 			<img src="/wp-content/uploads/2016/03/whathot.png" width="305px" height:30px;>	
 			<ul class="asidepost-list">  
 				<?php if (function_exists('get_most_viewed')): ?>   
