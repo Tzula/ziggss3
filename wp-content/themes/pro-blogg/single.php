@@ -91,7 +91,7 @@
 			<!--引入首页部分内容 -->
 			<div class="include_homeContent">
 				<div class="single_one_title">
-					<img src="/wp-content/uploads/2016/03/moretrendingnews.png" width="850px" height:30px;>
+					<img src="/wp-content/uploads/2016/03/moretrendingnews.png" width="850px" height="30px";>
 				</div>
 				<div class="single_content">
 					<div class="single_container">
@@ -103,7 +103,7 @@
 									'posts_per_page' =>6,
 									'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 									);
-									$query = new WP_Query( $args2 ); //var_dump($query->have_posts());exit;
+									$query = new WP_Query( $args2 );
 									if ( $query->have_posts() ) :
 										while ( $query->have_posts() ) : $query->the_post();
 											echo '<div class="single_grid_post">';
