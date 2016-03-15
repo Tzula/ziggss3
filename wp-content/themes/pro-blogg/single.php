@@ -1,7 +1,7 @@
 <?php
  get_header();
 ?>
-<div class="single" style="align:center">
+<div class="single">
 <div class="single_content">  
 	<div class="single_container">
 		<div class="single_post_content">

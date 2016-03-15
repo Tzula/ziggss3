@@ -435,7 +435,7 @@ img { max-width: 100%; height: auto; }
 * 博客详情页single_css
 *.single{float:left;width:1265px;height:auto;}
 */
-
+.single{margin-left:auto;margin-left:auto;position:relative;}
 .single_content { overflow: hidden; margin-left: 80px; width:850px;float:left;}
 .single_container { width: 850px;  float:left;overflow:hidden;}
 .single_post_content { width: 850px; float: left; color: #333; padding: 10px 5px 15px; }
