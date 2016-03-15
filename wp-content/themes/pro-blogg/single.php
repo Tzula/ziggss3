@@ -69,14 +69,14 @@
 							</div>
 							<!--内容部分底部广告结束-->
 							<?php
-								//wp_link_pages(array(
+								wp_link_pages(array(
 									'before' => '<div class="link_pages">'.__('Pages', 'pro-blogg'),
 									'after' => '</div>',
 									'link_before' => '<span>',
 									'link_after' => '</span>'
-								//)); 
+								)); 
 							?>
-							<?php //the_tags( '<div class="post_tags">Tags: ', ', ', '</div>' ); ?> 
+							<?php the_tags( '<div class="post_tags">Tags: ', ', ', '</div>' ); ?> 
 							<?php //pagination($query_string); ?>  
 							
 						</article>
