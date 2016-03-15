@@ -330,7 +330,7 @@ function pagination($query_string){
 		$paged = 1;   
 		$prev = $paged - 1;   
 		$next = $paged + 1;   
-		$range = 2; // only edit this if you want to show more page-links   
+		$range =2; // only edit this if you want to show more page-links   
 		$showitems = ($range * 2)+1;   
 		  
 		$pages = ceil($total_posts/$posts_per_page);   

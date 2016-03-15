@@ -74,7 +74,7 @@
 									'after' => '</div>',
 									'link_before' => '<span>',
 									'link_after' => '</span>'
-								)); 
+								//)); 
 							?>
 							<?php //the_tags( '<div class="post_tags">Tags: ', ', ', '</div>' ); ?> 
 							<?php pagination($query_string); ?>  
@@ -103,7 +103,7 @@
 									'posts_per_page' =>6,
 									'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 									);
-									$query = new WP_Query( $args2 );
+									$query = new WP_Query( $args2 ); //var_dump($query->have_posts());exit;
 									if ( $query->have_posts() ) :
 										while ( $query->have_posts() ) : $query->the_post();
 											echo '<div class="single_grid_post">';
