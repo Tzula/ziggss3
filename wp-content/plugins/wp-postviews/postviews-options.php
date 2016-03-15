@@ -38,7 +38,7 @@ if(!empty($_POST['Submit'])) {
 	$views_options['display_archive'] = intval($_POST['views_display_archive']);
 	$views_options['display_search'] = intval($_POST['views_display_search']);
 	$views_options['display_other'] = intval($_POST['views_display_other']);
-	$viewTemplate = $_POST['views_template_template'];
+	$viewTemplate = $_POST['views_template_template']
 	$viewTemplates = '<div style="color:#00b7ee;font-size:5px;"><img src="icon-hits.png">'.$viewTemplate.'</div>';
 	$views_options['template'] =  trim($viewTemplates);
 	
@@ -71,7 +71,7 @@ if(!empty($_POST['do'])) {
 	switch($_POST['do']) {		
 		case __('UNINSTALL WP-PostViews', 'wp-postviews') :
 			if(trim($_POST['uninstall_views_yes']) == 'yes') {
-				echo '<div id="message" class="updated fade">';   
+				echo '<div id="message" class="updated fade">';
 				echo '<p>';
 				foreach($views_settings as $setting) {
 					$delete_setting = delete_option($setting);
