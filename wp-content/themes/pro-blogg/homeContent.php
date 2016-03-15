@@ -51,7 +51,7 @@
 										echo '<div class="grid_post_img" >
 													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;position:absolute;" class="home_grid_post_img"></a>
 												</div>';
-										echo '<div class="imgmessage clearfix" style="top:323px"><a href="./life">'.$categories['name'].'</a></div>';
+										echo '<div class="imgmessage clearfix" style="top:323px"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
 										echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
 										echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
 										echo '<span class="views">'; if(function_exists('the_views')) { echo the_views(); }
@@ -64,7 +64,7 @@
 													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
 												
 												</div>';
-										echo '<div class="imgmessage clearfix"><a href="./'.$categories['name'].'">'.$categories['name'].'</a></div>';
+										echo '<div class="imgmessage clearfix"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
 										echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
 										echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
 										echo '<span class="views">'; if(function_exists('the_views')) { echo the_views(); }
