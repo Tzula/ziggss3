@@ -77,7 +77,7 @@
 								//)); 
 							?>
 							<?php //the_tags( '<div class="post_tags">Tags: ', ', ', '</div>' ); ?> 
-							<?php pagination($query_string); ?>  
+							<?php //pagination($query_string); ?>  
 							
 						</article>
 						<hr>
