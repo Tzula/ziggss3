@@ -22,11 +22,10 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 /*
 *single-footer
 */
-.single-footer{
+.single_footer{
 	margin-bottom:0px;
 	width:100%px;
-	max-height:200px;
-	margin-top:10px;
+	max-height:200px;	margin-top:10px;
 	
 }
 
