@@ -25,12 +25,25 @@
 							<ins class="adsbygoogle"
 								 style="display:inline-block;width:300px;height:250px"
 								 data-ad-client="ca-pub-3742939967040468"
-								 data-ad-slot="2803209634"></ins>
+								 data-ad-slot="2803209634">
+							</ins>
 							<script>
 							(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
+							</script>
 					</div>
 					<?php the_content(); ?>
+					<!--博客详情部分添加300*250广告位 -->
+					<div class="single_srticle_bottom_ad_site">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- orzzz content bottom 300250 -->
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:300px;height:250px"
+							 data-ad-client="ca-pub-3742939967040468"
+							 data-ad-slot="4315138836"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div><br/><br/>
 						<?php
 						wp_link_pages(array(
 							'before' => '<div class="link_pages">'.__('Pages', 'pro-blogg'),
@@ -40,13 +53,11 @@
 						)); 
 					?>
 					<?php the_tags( '<div class="post_tags">Tags: ', ', ', '</div>' ); ?> 
-					
-				</article>
-					[<a id="single_comments" href="#">Show Comment</a>]
-					
-					
+					/*
+					*此处为文章的评论部分，默认为隐藏状态
+					*/
+					[<a id="single_comments" href="#">Show Comment</a>]			
 					<script type="text/javascript" src="./wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
-
 					<script>
 						$("#single_comments").click(function(){
 							alert(3333);
@@ -56,88 +67,70 @@
 					</script>
 					<div class="test" style="display:none">YouToBe</div>
 					<div id="single_comments_list" >
-
 						<div class="clear"><hr></div>
 						<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 									<div class="home_blog_box">
 										<div class="comments_cont">
 										<?php
-											// If comments are open or we have at least one comment, load up the comment template
 											comments_template( '', true );
 										?>
 										</div>
 									</div>
-						<?php endif;
-				endwhile;
-				?>
-				</div>
-			<!--博客详情部分添加300*250广告位 -->
-			<div class="single_srticle_bottom_ad_site">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- orzzz content bottom 300250 -->
-				<ins class="adsbygoogle"
-					 style="display:inline-block;width:300px;height:250px"
-					 data-ad-client="ca-pub-3742939967040468"
-					 data-ad-slot="4315138836"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div><br/><br/>
+						<?php endif;?>
+					</div>
+					/*评论部分结束*/
+					
+				</article>				
+				<?php endwhile;?>		
 			</div>
-			
-			<hr>
-			<div class="guess_you_like">
+		</div> <!-- class="single_container"部分结束-->
+		<hr>
+		<div class="guess_you_like"> <!-- class="guess_you_like"部分结束-->
 				May be you like ~ ~ ~
 			</div>
-			<div class="include_homeContent" >
-					
-					<div class="single_one_title" style="font-family:'Roboto',sans-serif;font-size:25px;font-weight:900;"><img src="/wp-content/uploads/2016/03/moretrendingnews.png" width="850px" height:30px;></div>
-					<div class="single_content" style="margin-left:auto;margin-right:auto;">
-						<div class="single_container">
-							<div class="single_post_content">
-								<div class="single_home_posts">
-								
-									<?php
-										$args2 = array(
-										'post_type' => 'post',
-										'posts_per_page' =>6,
-										'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
-										);
-										$query = new WP_Query( $args2 );
-										if ( $query->have_posts() ) :
-											while ( $query->have_posts() ) : $query->the_post();
-												echo '<div class="single_grid_post">';
-												$type = get_post_meta($post->ID,'page_featured_type',true);
-												switch ($type) {
-													case 'youtube':
-														echo '<iframe width="560" height="315" src="http://www.youtube.com/embed/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?wmode=transparent" frameborder="0" allowfullscreen></iframe>';
-														break;
-													case 'vimeo':
-														echo '<iframe src="http://player.vimeo.com/video/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?title=0&amp;byline=0&amp;portrait=0&amp;color=03b3fc" width="500" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
-														break;
-													default:
-														//echo '<div class="single_hr"><hr/></div>';
-														echo '<div class="single_grid_post_img" >
-																	<a href="'.get_permalink().'"><img src="'.catch_that_image().'" class="single_grid_post_img"></a>
-																</div>';
+		<div class="include_homeContent" >
+	
+				<div class="single_one_title" style="font-family:'Roboto',sans-serif;font-size:25px;font-weight:900;"><img src="/wp-content/uploads/2016/03/moretrendingnews.png" width="850px" height:30px;></div>
+				<div class="single_content" style="margin-left:auto;margin-right:auto;">
+					<div class="single_container">
+						<div class="single_post_content">
+							<div class="single_home_posts">
+							
+								<?php
+									$args2 = array(
+									'post_type' => 'post',
+									'posts_per_page' =>6,
+									'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
+									);
+									$query = new WP_Query( $args2 );
+									if ( $query->have_posts() ) :
+										while ( $query->have_posts() ) : $query->the_post();
+											echo '<div class="single_grid_post">';
+											$type = get_post_meta($post->ID,'page_featured_type',true);
+											switch ($type) {
+												case 'youtube':
+													echo '<iframe width="560" height="315" src="http://www.youtube.com/embed/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?wmode=transparent" frameborder="0" allowfullscreen></iframe>';
+													break;
+												case 'vimeo':
+													echo '<iframe src="http://player.vimeo.com/video/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?title=0&amp;byline=0&amp;portrait=0&amp;color=03b3fc" width="500" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+													break;
+												default:
+													//echo '<div class="single_hr"><hr/></div>';
+													echo '<div class="single_grid_post_img" >
+																<a href="'.get_permalink().'"><img src="'.catch_that_image().'" class="single_grid_post_img"></a>
+															</div>';
 													echo '<div class="single_grid_post_bottom">';
-														echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000"><h3>'.mb_strimwidth(get_the_title(),0,40,'……').'</h3></a></div>';
-														
+													echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000"><h3>'.mb_strimwidth(get_the_title(),0,40,'……').'</h3></a></div>';
+													
 													echo '</div>';
-
-
-														break;
-												}
-												echo '<div class="single_grid_home_posts">
-															
-														</div>
-													</div>
-													';
-											endwhile;
-									?>
-							</div>
-							<?php
-								echo '<div class="single_load_more_content"><div class="single_load_more_text">';
+												break;
+											}
+											echo '<div class="single_grid_home_posts"></div>';
+											echo '</div>';
+										endwhile;?>
+						<!--</div>-->
+								<?php
+									echo '<div class="single_load_more_content"><div class="single_load_more_text">';
 										ob_start();
 											next_posts_link('LOAD MORE',$query->max_num_pages);
 											$buffer = ob_get_contents();
@@ -145,19 +138,16 @@
 										if(!empty($buffer)) echo $buffer;
 									echo'</div></div>';					
 								$max_pages = $query->max_num_pages;
-									wp_reset_postdata();
-								endif;
-							?>
+								wp_reset_postdata();
+							endif;?>
 							<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
-							</div>
-							<?php //get_sidebar(); ?>
-							<div class="single_clear"></div>
-						</div>
-						</div>
-				
-			</div>
-		</div>
-	</div>
+					</div>
+						<div class="single_clear"></div>
+				</div>
+			</div>		
+		</div>		
+	</div><!-- class="include_homeContent"部分结束-->
+	</div> <!-- class="single_content"部分结束-->
 	<div class="single_sidebar">
 		<!--边栏广告位-->
 		<div class="single_sidebar_ad_site">
@@ -182,6 +172,7 @@
 		</ul>
 	</div>
 </div>
+<!-- 页面主题部分结束-->
 
 <div class="single_footer">
 <?php
