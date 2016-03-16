@@ -12,6 +12,15 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 */
 /* =WordPress Core
 -------------------------------------------------------------- */
+/*
+*single-footer
+*/
+.single-footer{
+	margin-bottom:0px;
+	width:100%px;
+	max-height:200px;
+}
+
 .hr{
    margin-buttom:50px;
    color:#DBDBDB;

@@ -181,7 +181,10 @@
 		</ul>
 </div>
 </div>
+
+<div class="single_footer">
 <?php
 get_footer();
 ?>
+</div>
 
