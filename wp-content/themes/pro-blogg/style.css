@@ -13,12 +13,21 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 /* =WordPress Core
 -------------------------------------------------------------- */
 /*
+*single页面内容部分
+*/
+.single{
+	margin:10px auto;
+}
+
+/*
 *single-footer
 */
 .single-footer{
 	margin-bottom:0px;
 	width:100%px;
 	max-height:200px;
+	margin-top:10px;
+	
 }
 
 .hr{
@@ -237,7 +246,7 @@ a img.aligncenter {
 }
 .container { width: 1180px; margin: 0 auto; }
 .clear { clear: both; }
-body {  font-size: 14px; font-family: 'Lato', sans-serif; font-weight: 400; color: #333; line-height: 140%; letter-spacing: 1.5px; margin: 0 }
+body { text-align:center; font-size: 14px; font-family: 'Lato', sans-serif; font-weight: 400; color: #333; line-height: 140%; letter-spacing: 1.5px; margin: 0 }
 p { font-size: 16px; font-family: 'Lato', sans-serif; font-weight: 400; color: #333; line-height: 160%; letter-spacing: 1.5px; }
 a { text-decoration: none; }
 img { max-width: 100%; height: auto; }
