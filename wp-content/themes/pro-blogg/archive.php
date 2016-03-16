@@ -25,10 +25,22 @@ get_header();
 				 					echo '<iframe src="http://player.vimeo.com/video/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?title=0&amp;byline=0&amp;portrait=0&amp;color=03b3fc" width="500" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 				 					break;
 				 				default:
+									/*
 									echo '<div class="grid_post_img">
 												<a href="'.get_permalink().'">'.get_the_post_thumbnail().'</a>
 											</div>';
 									break;
+									*/
+									echo '<div class="hr"><hr/></div>';
+									echo '<div class="grid_post_img" >
+												<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
+											
+											</div>';
+									echo '<div class="imgmessage clearfix"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
+									echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
+									echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
+									echo '<span class="views">'; if(function_exists('the_views')) { echo the_views(); }
+									echo '</span></div>';
 							}
 							echo '<div class="grid_home_posts">
 										<p>'.dess_get_excerpt(120).'</p>
