@@ -14,7 +14,8 @@ get_header();
 				);
 			$the_query = new WP_Query( $args );
 	 		if ( $the_query->have_posts() ) :
-	 			echo '<div class="home_slider"><ul class="slides">';
+				echo '<section>';
+	 			echo '<div class="home_slider top-banner flexslider"><ul class="slides">';
 	 			while ( $the_query->have_posts() ) : $the_query->the_post();
 		 			$type = get_post_meta($post->ID,'page_featured_type',true);
 		 			switch ($type) {
@@ -32,6 +33,7 @@ get_header();
 		 			
 	 			endwhile;
 	 			echo '</ul></div>';
+				echo '</section>';
 	 			wp_reset_postdata();
 	 		endif;
  		endif;
