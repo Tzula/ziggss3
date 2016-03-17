@@ -51,7 +51,7 @@
 										echo '<div class="grid_post_img" >
 													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
 												</div>';
-										echo '<div class="imgmessage clearfix" style="margin-top:306px;"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
+										echo '<div class="imgmessage clearfix" style="margin-top:290px;"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
 
 										echo '<div class="grid_post_bottom">';
 											echo '<div class="grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,50,'……').'</a></div>';
