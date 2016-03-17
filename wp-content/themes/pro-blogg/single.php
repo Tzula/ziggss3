@@ -17,7 +17,7 @@
 						</span>
 					</div>
 					<div class="clear"></div>
-					<h1><?php the_title(); ?></h1>
+					<h5 style="font-size:20px;"><?php the_title(); ?></h5>
 					<hr>
 					<!--博客详情部分添加300*250广告位 -->
 					<div class="single_srticle_ad_site">
@@ -119,7 +119,7 @@
 																	<a href="'.get_permalink().'"><img src="'.catch_that_image().'" class="single_grid_post_img"></a>
 																</div>';
 														echo '<div class="single_grid_post_bottom">';
-														echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000"><h3>'.mb_strimwidth(get_the_title(),0,40,'……').'</h3></a></div>';
+														echo '<div class="single_grid_post_title"><a href="'.get_permalink().'" style="font-color:#000000">'.mb_strimwidth(get_the_title(),0,70,'……').'</a></div>';
 														
 														echo '</div>';
 													break;

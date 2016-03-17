@@ -1,5 +1,5 @@
 <?php wp_homeContent(); ?>
-<div class="content" style="margin-left:auto;margin-right:auto;">
+<div class="home_content" style="margin:0 auto;">
 	<div class="container">
 		<div class="post_content">
 			<div class="home_posts">
@@ -49,13 +49,16 @@
 										//广告位结束
 										echo '<div class="hr"><hr/></div>';
 										echo '<div class="grid_post_img" >
-													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;position:absolute;" class="home_grid_post_img"></a>
+													<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
 												</div>';
-										echo '<div class="imgmessage clearfix" style="top:323px"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
-										echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
-										echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
-										echo '<span class="views">';  echo the_views();
-										echo '</span></div>';
+										echo '<div class="imgmessage clearfix" style="margin-top:306px;"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
+
+										echo '<div class="grid_post_bottom">';
+											echo '<div class="grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,50,'……').'</a></div>';
+											echo '<div class="grid_post_views" ><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px"; style="float:left;">';
+											echo '<span class="views">';  echo the_views();
+											echo '</span></div>';
+										echo '</div>';
 
 
 									} else {
@@ -65,10 +68,12 @@
 												
 												</div>';
 										echo '<div class="imgmessage clearfix"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
-										echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
-										echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
-										echo '<span class="views">';echo the_views(); 
-										echo '</span></div>';
+										echo '<div class="grid_post_bottom">';
+											echo '<div class="grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,50,'……').'</a></div>';
+											echo '<div class="grid_post_views" ><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px"; style="float:left;">';
+											echo '<span class="views">';  echo the_views();
+											echo '</span></div>';
+										echo '</div>';
 									}
 									
 									$index += 1;
