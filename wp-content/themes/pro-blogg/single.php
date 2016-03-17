@@ -18,7 +18,7 @@
 					</div>
 					<div class="clear"></div>
 					<h5 style="font-size:20px;"><?php the_title(); ?></h5>
-					<hr>
+					
 					<!--博客详情部分添加300*250广告位 -->
 					<div class="single_srticle_ad_site">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -66,7 +66,7 @@
 					</script>
 					<div class="test" style="display:none">YouToBe</div>
 					<div id="single_comments_list" >
-						<div class="clear"><hr></div>
+						<div class="clear"></div>
 						<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 									<div class="home_blog_box">
 										<div class="comments_cont">
