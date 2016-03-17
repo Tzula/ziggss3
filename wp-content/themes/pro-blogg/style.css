@@ -51,14 +51,14 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
 }
 /*热门文章模块的div的css*/
 .single_sidebar{
-	width:300px;
+	width:302px;
 	height:auto;
-	margin-left:70px;
-	float:left;
+	margin-left:25px;
+	float:right;
 	margin-top:20px;
 }
 .guess_you_like{
-	width:840px;
+	width:850px;
 	height:450px;
 	border: 1px solid #ddd;
 }
@@ -78,7 +78,7 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
   font-weight: 500;
   margin: 10px 0 0px 0;
   text-align: center;
-  width: 300px;
+  width: 25%;
 }
 .single_sidebar_one_title span {
   padding-left: 30px;
@@ -88,12 +88,6 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
   position: relative;
   bottom: 10px;
   }
-.single_sidebar_one_title em,.single_sidebar_one_title span{
-  background: url(../images/icon.png?v=007) no-repeat;
- }
- 
-
-
 
 .asidepost-list{
 	width:300px;
@@ -131,7 +125,9 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
 	text-align:left;
 	max-height:60px;
 	overflow:hidden;
-
+	font-family: 'Roboto',sans-serif;
+	font-size:17px;
+	font-weight: 700;
 }
 .hot_post_info a:link{
 	color:#fff;
@@ -250,14 +246,34 @@ p { font-size: 16px; font-family: 'Lato', sans-serif; font-weight: 400; color: #
 a { text-decoration: none; }
 img { max-width: 100%; height: auto; }
 /**HEADER**/
+.slideDown, .header .header-menu li .login-info ul {
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+.slideUp, .header .header-menu li .login-info ul {
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+.animated {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  display: block;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
 .head-top {
   -moz-box-shadow: 0 0 2px 1px #ccc; -webkit-box-shadow: 0 0 2px 1px #ccc; box-shadow: 0 0 2px 1px #ccc; 
-  padding: 15px 0 10px;
- 
+  padding: 5px 0 5px;
   width: 100%;
   top: 0;
   background: #fff;
-  z-index: 999;
   float:left;
 }
 .web-logo {float:left;margin-left:20px;}
@@ -453,9 +469,54 @@ img { max-width: 100%; height: auto; }
 *.single{float:left;width:1265px;height:auto;}
 */
 
-.single_content { overflow: hidden; margin-left: 80px; width:850px;float:left;}
-.single_container { width: 850px;  float:left;overflow:hidden;}
-.single_post_content { width: 850px; float: left; color: #333; padding: 10px 5px 15px; }
+.single_mian {
+  width: 90%;
+  background: #fff;
+  padding: 10px 0;
+  margin-right:auto;
+  margin-left:auto;
+  height:1000px;
+  text-align:center;
+  margin-top:100px;
+  border:1px solid #000;
+}
+section {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+}
+main{
+	width: 90%;
+	background: #fff;
+	padding: 10px 0;
+	margin: 10px auto;
+}
+
+
+footer{
+  display: block;
+  position: relative;
+  z-index: 1;
+  float:left;
+}
+.clearfix:after {
+  display: block;
+  content: 'clear';
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+}
+
+/*
+*此处为引入首页部分的css
+*/
+.single_include_content { overflow: hidden;  width:840px;float:left;}
+.single_include_container { width: 100%;  float:left;overflow:hidden;}
+
+.single_content { overflow: hidden;  width:100%;float:left;}
+.single_container { width: 70%;  float:left;overflow:hidden;}
+.single_post_content { width: 100%; float: left; color: #333; padding: 10px 5px 15px; }
 .single_post_content > article { overflow: hidden; }
 .single_srticle_ad_site{
 	width:320px;
@@ -497,6 +558,18 @@ img { max-width: 100%; height: auto; }
 .single_one_title em,.single_one_title span{
   background: url(../images/icon.png?v=007) no-repeat;
  }
+  .single_include_home_posts{
+	width: 840px;
+	height:auto;
+	float:left;	
+}
+.single_include_home_posts .single_grid_post{
+	width:260px;
+	height:270px;
+	overflow:hidden;
+    margin-right:15px;
+	float:left;
+}
    
 .single_home_posts{
 	width: 840px;
@@ -578,14 +651,13 @@ img { max-width: 100%; height: auto; }
 .content { overflow: hidden; margin: 0 0 40px; width:1165px;}
 .home .content { margin-top: 50px; }
 .container { width: 1165px; margin: 0 auto; float:left;overflow:hidden;}
-article.post_box, .blog_posts { width: 760px; }
-.sidebar { width: 280px; float: left; padding: 20px 10px; font-size: 13px;font-weight: 400;  }
+article.post_box, .blog_posts { width: 820px; }
 .post_content { width: 1165px; float: left; color: #333; padding: 20px 10px 30px; }
 .post_content > article { overflow: hidden; }
 .post_content a { color: #000; }
-.post_content h1 { line-height: 1; font-size: 30px; margin: 5px 0 25px; max-width: 720px; }
-.post_content h2 { line-height: 1; font-size: 26px; margin: 0 0 25px; }
-.post_content h3 { line-height: 1; font-size: 25px; font-family: 'Lato', sans-serif; font-weight: 700; line-height: 140%; letter-spacing: 1.5px; margin: 0 0 25px; }
+.post_content h1 { line-height: 1; font-size: 30px; margin: 5px 0 25px; max-width: 720px; font-family: 'Roboto',sans-serif;}
+.post_content h2 { line-height: 1; font-size: 26px; margin: 0 0 25px;   font-family: 'Roboto',sans-serif;}
+.post_content h3 { line-height: 1; font-size: 25px;   font-family: 'Roboto',sans-serif; font-weight: 700; line-height: 140%; letter-spacing: 1px; margin: 0 0 25px; }
 .post_content h4,
 .post_content h5,
 .post_content h6 { line-height: 1; font-size: 18px; 
