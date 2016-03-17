@@ -513,6 +513,7 @@ footer{
 */
 .single_include_content { overflow: hidden;  width:840px;float:left;}
 .single_include_container { width: 100%;  float:left;overflow:hidden;}
+.single_include_one_title{width:840px;height:40px;margin-bottom:10px;}
 
 .single_content { overflow: hidden;  width:100%;float:left;}
 .single_container { width: 70%;  float:left;overflow:hidden;}
