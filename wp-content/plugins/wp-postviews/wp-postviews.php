@@ -319,7 +319,7 @@ function get_timespan_most_viewed($mode = '', $limit = 10, $days = 7, $display =
 		
 		foreach ($hots as $key => $hot) {
 			$thumb =  '<img src="'.$hot['img_Url'].'" alt="暂无特色图片" width="300px">';  
-			$temp .= '<li style="list-style-type:none;" class="asidepost-list-li"><div class="hot_post"><a href="'.get_permalink().'" class="hot_imginfo">'.$thumb.'</a><div class="hot_post_info"><a class="hot_subtitle" href="'.get_permalink().'" ><h3>'.mb_strimwidth($hot['post_title'],0,40,'……').'<h3></a>'.__('', 'wp-postviews').'</div></div></li>';
+			$temp .= '<li style="list-style-type:none;" class="asidepost-list-li"><div class="hot_post"><a href="'.get_permalink().'" class="hot_imginfo">'.$thumb.'</a><div class="hot_post_info"><a class="hot_subtitle" href="'.get_permalink().'" style="">'.mb_strimwidth($hot['post_title'],0,50,'').'</a>'.__('', 'wp-postviews').'</div></div></li>';
 
 		}
 

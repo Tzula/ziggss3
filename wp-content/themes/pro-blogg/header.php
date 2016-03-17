@@ -8,8 +8,8 @@
 	<?php wp_head(); ?>
 	</head> 
 <body <?php body_class(); ?>>
-	<header id="head">
-		<div class="head-top">	
+	<header >
+		<div class="head-top">
 		<!--放置网站logo -->
 			<div class="web-logo">
 				<img src="/wp-content/uploads/2016/03/web-logo.png" width="150px" height="150px"> 
@@ -52,14 +52,4 @@
 				<div class="clear"></div>
 			</div>
 		</div>
-		<!--
-		<div class="head-logo">
-			<div class="container">
-				<div class="logo">
-					<?php echo (dess_setting('dess_logo') != '' ? '<a href="'.home_url().'"><img src="'.dess_setting('dess_logo').'" class="logo" alt="logo" /></a>': '<a href="'.home_url().'"><img src="'.esc_url( get_stylesheet_directory_uri() ).'/images/logo.png" class="logo" alt="logo" /></a>'); ?>	
-					<?php //echo '<a href="'.home_url().'"><img src="'.get_header_image().'" class="logo" alt="logo" /></a>'; ?>	
-				</div>
-			</div>
-		</div>
-	-->
 	</header>
