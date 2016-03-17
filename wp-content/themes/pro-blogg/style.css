@@ -307,7 +307,7 @@ img { max-width: 100%; height: auto; }
 .head_right{
 	float:right;
 	max-width:300px;
-	margin-right:10x;
+	margin-right:0 10px 0 0;
 	height:85px;
 }
 .head-socials { float: right; max-width: 300px;padding-right:5px;}
@@ -341,9 +341,12 @@ img { max-width: 100%; height: auto; }
   background: #ffffff none repeat scroll 0 0;
 }
 /**HOME**/
-.home_slider { width:100%;height:330px;padding-top:10px;}
+.home_slider { width:100%;height:280px;padding:auto;z-index: 1}
+.flexslider {  position: relative;  zoom: 1;}
+.top-banner {  width: 100%;  height: 280px;  padding: 25px 0;  margin: 20px auto;  overflow: hidden;}
+
 .home_slider .slides { list-style: none;  }
-.home_slider .slides li { height: 330px;  overflow: hidden; width: 480px; display: none; }
+.home_slider .slides li { height: 280px;  overflow: hidden; width: 280px; display: none; }
 .home_slider .slides li a:not(.home_slide_bg) {
   background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
   bottom: 0;

@@ -8,7 +8,7 @@
 	<?php wp_head(); ?>
 	</head> 
 <body <?php body_class(); ?>>
-	<header >
+	<!--<header style="margin-bottom:10px;float:left;">-->
 		<div class="head-top">
 		<!--放置网站logo -->
 			<div class="web-logo">
@@ -52,4 +52,4 @@
 				<div class="clear"></div>
 			</div>
 		</div>
-	</header>
+	<!--</header>-->
