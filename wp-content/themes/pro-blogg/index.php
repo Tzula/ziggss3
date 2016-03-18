@@ -3,6 +3,7 @@ get_header();
 ?>
 	
 	<?php 
+	dess_setting('dess_show_slider') = 1; echo 2222;
 		if (dess_setting('dess_show_slider') == 1) :
 			
 			$args = array(
@@ -12,7 +13,12 @@ get_header();
 				'posts_per_page' => -1,
 				'ignore_sticky_posts' => true
 				);
-			$the_query = new WP_Query( $args );
+			$the_query = new WP_Query( $args );  
+
+			$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'show_in_slider' AND post_id = $post->ID" );
+			var_dump($rows);exit;
+
+
 	 		if ( $the_query->have_posts() ) :
 				echo '<section>';
 	 			echo '<div class="home_slider top-banner flexslider"><ul class="slides">';
