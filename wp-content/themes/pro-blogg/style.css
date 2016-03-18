@@ -499,17 +499,18 @@ section {
 }
 
 .single_top_title{
-	font-size:30px;
+	font-size:25px;
 	font-family:'Lato', sans-serif; 
-	font-weight: 700;
+	font-weight: 900;
 	float:left;
 	text-align:left;
-	height:60px;
+	height:40px;
+	margin-top:5px;
 	
 }
 .single_title_hr{
 	width:100%;
-	height:10px;
+	height:5px;
 	margin-top:2px;
 }
 .single_title_hr  .single_title_category{
@@ -528,6 +529,18 @@ section {
 	width:65%;
 	height:auto;
 }
+
+.single_srticle_ad_site_ins{
+	display:inline-block;
+	width:300px;
+	height:250px
+}
+.single_sidebar_ad_site_ins{
+	display:inline-block;
+	width:300px;
+	height:600px
+}
+
 footer{
   display: block;
   position: relative;
@@ -557,9 +570,9 @@ footer{
 .single_srticle_ad_site{
 	width:320px;
 	height:260px;
-	margin-top:10px;
+	margin-top:15px;
 	text-align:left;
-	margin-bottom:2px;
+	margin-bottom:12px;
 }
 .single_srticle_bottom_ad_site{
 	width:320px;

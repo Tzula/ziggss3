@@ -32,8 +32,7 @@
 					<div class="single_srticle_ad_site">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<!-- orzzzz content 300250 -->
-							<ins class="adsbygoogle"
-								 style="display:inline-block;width:300px;height:250px"
+							<ins class="adsbygoogle" class="single_srticle_ad_site_ins" 
 								 data-ad-client="ca-pub-3742939967040468"
 								 data-ad-slot="2803209634">
 							</ins>
@@ -49,8 +48,7 @@
 					<div class="single_srticle_bottom_ad_site">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 						<!-- orzzz content bottom 300250 -->
-						<ins class="adsbygoogle"
-							 style="display:inline-block;width:300px;height:250px"
+						<ins class="adsbygoogle" class="single_srticle_ad_site_ins" 
 							 data-ad-client="ca-pub-3742939967040468"
 							 data-ad-slot="4315138836"></ins>
 						<script>
@@ -164,8 +162,7 @@
 			<div class="single_sidebar_ad_site">
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 					<!-- orzzzz content 300*600 -->
-					<ins class="adsbygoogle"
-						 style="display:inline-block;width:300px;height:600px"
+					<ins class="adsbygoogle" class="single_sidebar_ad_site_ins" 
 						 data-ad-client="ca-pub-3742939967040468"
 						 data-ad-slot="7373010037">
 					</ins>
