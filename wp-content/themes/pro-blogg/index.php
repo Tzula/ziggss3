@@ -5,7 +5,7 @@ get_header();
 	<?php 
 	echo 2222;
 		if (dess_setting('dess_show_slider') == 1) :
-			echo 3333;
+			
 			$args = array(
 				'post_type' => 'post',
 				'meta_key' => 'show_in_slider',
@@ -14,16 +14,15 @@ get_header();
 				'ignore_sticky_posts' => true
 				);
 			$the_query = new WP_Query( $args );  
-
-			$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'show_in_slider' AND post_id = $post->ID" );
-			var_dump($rows);
-
-
+echo $post->ID;
+			
 	 		if ( $the_query->have_posts() ) :
 				echo '<section>';
 	 			echo '<div class="home_slider top-banner flexslider"><ul class="slides">';
 	 			while ( $the_query->have_posts() ) : $the_query->the_post();
-		 			$type = get_post_meta($post->ID,'page_featured_type',true);
+		 			$type = get_post_meta($post->ID,'page_featured_type',true); 
+					$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'show_in_slider' AND post_id = $post->ID" );
+			var_dump($rows);
 		 			switch ($type) {
 		 				case 'youtube':
 		 					echo '<li><iframe width="560" height="315" src="http://www.youtube.com/embed/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?wmode=transparent" frameborder="0" allowfullscreen></iframe></li>';
