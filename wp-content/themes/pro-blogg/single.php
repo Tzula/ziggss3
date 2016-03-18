@@ -6,7 +6,11 @@
 	<div class="single_content"> 
 		<div class="single_container">
 			<div class="single_post_content">
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post();  
+					//$categories = get_the_category(the_ID());
+					//将object的对象转化成数组get_obhect_vars();
+					//$categories = get_object_vars($categories[0]);
+				?>
 				<article class="post_box" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="post_nav">
 						<span class="prev_post">
@@ -17,8 +21,13 @@
 						</span>
 					</div>
 					<div class="clear"></div>
-					<h5 style="font-size:20px;"><?php the_title(); ?></h5>
-					
+					<div class="single_top_title"><?php the_title(); ?></div>
+					<div class="single_title_hr">
+						<!--<div class="single_title_category">
+							<a href="./category/<?php strtolower($categories['name'])?>"><?php $categories['name']?></a>
+						</div>-->
+						<hr>
+					</div>
 					<!--博客详情部分添加300*250广告位 -->
 					<div class="single_srticle_ad_site">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -32,7 +41,10 @@
 							(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
 					</div>
-					<?php the_content(); ?>
+					<div class="single_detail_content">
+						<?php the_content(); ?>
+					</div>
+					
 					<!--博客详情部分添加300*250广告位 -->
 					<div class="single_srticle_bottom_ad_site">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
