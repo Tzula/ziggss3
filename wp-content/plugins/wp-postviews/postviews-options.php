@@ -194,7 +194,7 @@ switch($mode) {
 		</tr>
 	</table>
 	<h3><?php _e('Display Options', 'wp-postviews'); ?></h3>
-	<p><?php _e('These options specify where the view counts should be displayed and to whom. 	By default view counts will be displayed to all visitors. Note that the theme files must contain a call to <code>the_views()</code> in order for any view count to be displayed.', 'wp-postviews'); ?></p>
+	<p><?php _e('These options specify where the view counts should be displayed and to whom. 	By default view counts will be displayed to all visitors. Note that the theme files must contain a call to <code>the_views()4343323243</code> in order for any view count to be displayed.', 'wp-postviews'); ?></p>
 	<table class="form-table">
 		<tr>
 			<td valign="top"><strong><?php _e('Home Page:', 'wp-postviews'); ?></strong></td>
