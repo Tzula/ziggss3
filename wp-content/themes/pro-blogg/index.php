@@ -15,6 +15,7 @@ get_header();
 				);
 			$the_query = new WP_Query( $args );  
 //echo $post->ID;
+			var_dump($the_query->have_posts());exit;
 			
 	 		if ( $the_query->have_posts() ) : echo 333;
 				echo '<section>';
