@@ -3,7 +3,7 @@ get_header();
 ?>
 	
 	<?php 
-	dess_setting('dess_show_slider') = 1; echo 2222;
+	dess_setting('dess_show_slider') = 1; echo 2222;exit;
 		if (dess_setting('dess_show_slider') == 1) :
 			
 			$args = array(
