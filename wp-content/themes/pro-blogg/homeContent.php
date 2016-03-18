@@ -10,7 +10,8 @@
 					'posts_per_page' => 29,
 					'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 					);
-					$query = new WP_Query( $args2 );
+					$query = new WP_Query( $args2 );    
+   
 					if ( $query->have_posts() ) :
 						$index = 0;
 						while ( $query->have_posts() ) 
@@ -23,6 +24,9 @@
 
 							//将object的对象转化成数组get_obhect_vars();
 							$categories = get_object_vars($categories[0]);
+							//获取文章的浏览次数
+							$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
+							$views = get_object_vars($rows[0]);
 
 				 			switch ($type) {
 				 				case 'youtube':
@@ -56,7 +60,7 @@
 										echo '<div class="grid_post_bottom">';
 											echo '<div class="grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></div>';
 											echo '<div class="grid_post_views" ><img src="./wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px"; style="float:left;">';
-											echo '<span class="views">';  //echo the_views();
+											echo '<span class="views">';  echo $views['meta_value'];
 											echo '</span></div>';
 										echo '</div>';
 
@@ -71,7 +75,7 @@
 										echo '<div class="grid_post_bottom">';
 											echo '<div class="grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></div>';
 											echo '<div class="grid_post_views" ><img src="./wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px"; style="float:left;">';
-											echo '<span class="views">';  echo the_views();
+											echo '<span class="views">';  echo $views['meta_value'];
 											echo '</span></div>';
 										echo '</div>';
 									}
