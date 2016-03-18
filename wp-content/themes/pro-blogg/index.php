@@ -15,7 +15,7 @@ get_header();
 				);
 			$the_query = new WP_Query( $args );  
 
-			$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'show_in_slider' AND post_id = $post->ID" );
+			$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'show_in_slider' AND post_id = $post->ID" );
 			var_dump($rows);exit;
 
 
