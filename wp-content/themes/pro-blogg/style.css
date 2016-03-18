@@ -383,8 +383,8 @@ img { max-width: 100%; height: auto; }
 .home_posts .grid_post_title {height:50px;float:left;padding:0 1px;font-size:18px;font-family:'Lato', sans-serif;font-weight:700;width:280px;overflow:hidden;text-align:left;}
 .home_posts .grid_post_views{padding-top:15px;height:35px;color:#00b7ee;width:35px;float:right;}
 .home_posts .views{height:35px;color:#00b7ee;width:15px;float:right;font-size:10px;}
-.home_posts .grid_post_title a:link{color:#fff;text-decoration:none;}
-.home_posts .grid_post_title a:hover{color::#00b7ee;text-decoration:none;}
+.home_posts .grid_post_title a:link{color:#000;text-decoration:none;}
+.home_posts .grid_post_title a:hover{color:#00b7ee;text-decoration:none;}
 
 .home_posts .home_ad_site{width: 325px; margin: 0 0 0px;height:275px;}
 .grid_post > iframe {0
