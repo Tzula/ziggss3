@@ -9,7 +9,7 @@ get_header();
 			$args = array(
 				'post_type' => 'post',
 				'meta_key' => 'show_in_slider',
-				'meta_value' => 'Yes',
+				'meta_value' => 'yes',
 				'posts_per_page' => -1,
 				'ignore_sticky_posts' => true
 				);
