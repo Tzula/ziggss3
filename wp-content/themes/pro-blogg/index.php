@@ -3,9 +3,9 @@ get_header();
 ?>
 	
 	<?php 
-	echo 2222;exit;
+	echo 2222;
 		if (dess_setting('dess_show_slider') == 1) :
-			
+			echo 3333;
 			$args = array(
 				'post_type' => 'post',
 				'meta_key' => 'show_in_slider',
