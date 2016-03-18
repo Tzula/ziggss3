@@ -38,7 +38,7 @@ get_header();
 											</div>';
 									echo '<div class="imgmessage clearfix"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
 									echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
-									echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/icon-hits.png" width="20px";height="20px";>';
+									echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px";>';
 									echo '<span class="views">'; if(function_exists('the_views')) { echo the_views(); }
 									echo '</span></div>';
 							}
