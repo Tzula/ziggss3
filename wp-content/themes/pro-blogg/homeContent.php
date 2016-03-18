@@ -25,7 +25,7 @@
 							//将object的对象转化成数组get_obhect_vars();
 							$categories = get_object_vars($categories[0]);
 							//获取文章的浏览次数
-							$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
+							$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
 							$views = get_object_vars($rows[0]);
 
 				 			switch ($type) {
