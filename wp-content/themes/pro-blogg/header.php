@@ -41,6 +41,15 @@
 					</form>
 				</div>
 			</div>
+			
+				<div class="head-nav">
+					<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+				</div>
+				<!--
+				<div class="head-search">
+					<?php get_search_form(); ?>
+				</div>
+				-->
 				<div class="clear"></div>
 			</div>
 		</div>
