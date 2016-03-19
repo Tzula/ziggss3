@@ -60,7 +60,7 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
 .guess_you_like{
 	width:100%;
 	height:450px;
-	border: 1px solid #ddd;
+	border: 0px solid #ddd;
 }
 .single_sidebar_ad_site{
 	width:300px;
@@ -443,7 +443,7 @@ img { max-width: 100%; height: auto; }
   color: #fff; }
   .post_content .post_tags { font-size: 12px; font-style: italic; }
 
-.post_nav { position: absolute; right: 0; top: 0; }
+.post_nav { position: relative; right: 0; top: 0; float:right;}
 .post_nav .prev_post { float: left; width: auto; margin: 0 10px 0 0;  }
 .post_nav .prev_post a { height: 30px; width: 30px; background: url(images/new-prev.png) no-repeat; display: block; }
 .post_nav .next_post { float: right; width: auto; }
@@ -504,8 +504,9 @@ section {
 	font-weight: 900;
 	float:left;
 	text-align:left;
-	height:40px;
+	height:80px;
 	margin-top:5px;
+	line-height:140%;
 	
 }
 .single_title_hr{
