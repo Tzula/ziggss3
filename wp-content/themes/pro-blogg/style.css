@@ -526,8 +526,8 @@ section {
 }
 
 .single_detail_content{
-	text-align:auto;
-	width:65%;
+	text-align:left;
+	width:100%;
 	height:auto;
 }
 
