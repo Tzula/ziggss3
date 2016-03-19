@@ -1,7 +1,7 @@
 <?php wp_homeContent(); ?>
 <div class="home_content" style="margin:0 auto;">
 	<div class="container">
-		<div class="post_content">
+		<div class="home_post_content">
 			<div class="home_posts">
 			
 				<?php
