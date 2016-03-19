@@ -526,7 +526,7 @@ section {
 }
 
 .single_detail_content{
-	text-align:left;
+	text-align:auto;
 	width:65%;
 	height:auto;
 }
