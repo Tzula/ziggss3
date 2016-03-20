@@ -7,7 +7,7 @@ get_header();
 			<div class="archive_title">
 				<h2><?php echo single_cat_title( '', false ); ?></h2>
 			</div><!--//archive_title-->
-			<div class="home_posts">
+			<div class="archive_home_posts">
 				<?php
 					$args = array_merge( $wp_query->query, array( 'posts_per_page' => 15 ) );
 					$query = new WP_Query($args);
