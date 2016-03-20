@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<div class="home_content" style="margin:0 auto;">
+<div class="home  _content" style="margin:0 auto;">
 	<div class="container">
 		<div class="home_post_content">
 			<div class="archive_title">
@@ -9,7 +9,7 @@ get_header();
 			</div><!--//archive_title-->
 			<div class="home_posts">
 				<?php
-					$args = array_merge( $wp_query->query, array( 'posts_per_page' => 6 ) );
+					$args = array_merge( $wp_query->query, array( 'posts_per_page' => 15 ) );
 					$query = new WP_Query($args);
 					if ( $query->have_posts() ) :
 						while ( $query->have_posts() ) : $query->the_post();
