@@ -44,8 +44,8 @@ get_header();
 										echo '</span></div>';
 									echo '</div>';
 							}
+							echo '</div>';
 						endwhile;
-
 				?>
 			</div>
 
