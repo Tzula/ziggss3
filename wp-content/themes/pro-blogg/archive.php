@@ -10,6 +10,10 @@ get_header();
 			<div class="home_posts">
 				<?php
 					$args = array_merge( $wp_query->query, array( 'posts_per_page' => 15 ) );
+
+var_dump($args);exit;
+
+
 					$query = new WP_Query($args);
 					if ( $query->have_posts() ) :
 						while ( $query->have_posts() ) : $query->the_post();
