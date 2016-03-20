@@ -1,10 +1,9 @@
 <?php
 get_header();
 ?>
-
-<div class="content">
+<div class="home_content" style="margin:0 auto;">
 	<div class="container">
-		<div class="post_content">
+		<div class="home_post_content">
 			<div class="archive_title">
 				<h2><?php echo single_cat_title( '', false ); ?></h2>
 			</div><!--//archive_title-->
@@ -17,6 +16,14 @@ get_header();
 							echo '<div class="grid_post">
 									<h3><a href="'.get_permalink().'">'.get_the_title().'</a></h3>';
 							$type = get_post_meta($post->ID,'page_featured_type',true);
+							$categories = get_the_category($post->ID);
+
+							//将object的对象转化成数组get_obhect_vars();
+							$categories = get_object_vars($categories[0]);
+							//获取文章的浏览次数
+							$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
+							$views = get_object_vars($rows[0]);
+
 				 			switch ($type) {
 				 				case 'youtube':
 				 					echo '<iframe width="560" height="315" src="http://www.youtube.com/embed/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?wmode=transparent" frameborder="0" allowfullscreen></iframe>';
@@ -25,28 +32,19 @@ get_header();
 				 					echo '<iframe src="http://player.vimeo.com/video/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?title=0&amp;byline=0&amp;portrait=0&amp;color=03b3fc" width="500" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 				 					break;
 				 				default:
-									/*
-									echo '<div class="grid_post_img">
-												<a href="'.get_permalink().'">'.get_the_post_thumbnail().'</a>
-											</div>';
-									break;
-									*/
 									echo '<div class="hr"><hr/></div>';
 									echo '<div class="grid_post_img" >
 												<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
 											
 											</div>';
 									echo '<div class="imgmessage clearfix"><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
-									echo '<div class="grid_post_title"><h5><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></h5></div>';
-									echo '<div class="grid_post_views"><img src="./wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px";>';
-									echo '<span class="views">'; if(function_exists('the_views')) { echo the_views(); }
-									echo '</span></div>';
+									echo '<div class="grid_post_bottom">';
+										echo '<div class="grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></div>';
+										echo '<div class="grid_post_views" ><img src="./wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px"; style="float:left;">';
+										echo '<span class="views">';  echo $views['meta_value'];
+										echo '</span></div>';
+									echo '</div>';
 							}
-							echo '<div class="grid_home_posts">
-										<p>'.dess_get_excerpt(120).'</p>
-									</div>
-								</div>
-								';
 						endwhile;
 
 				?>
@@ -66,7 +64,6 @@ get_header();
 		?>
 		<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
 		</div>
-		<?php get_sidebar(); ?>
 		<div class="clear"></div>
 	</div>
 	</div>
