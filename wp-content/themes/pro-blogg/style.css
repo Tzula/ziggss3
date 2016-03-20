@@ -51,7 +51,7 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
 }
 /*热门文章模块的div的css*/
 .single_sidebar{
-	width:27%;
+	width:25%;
 	height:auto;
 	margin-left:3%;
 	float:right;
@@ -63,7 +63,7 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
 	border: 0px solid #ddd;
 }
 .single_sidebar_ad_site{
-	width:300px;
+	width:100%;
 	height:600px;
 	margin-bottom:5px;
 	border: 1px solid #ddd;
@@ -78,7 +78,7 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
   font-weight: 500;
   margin: 10px 0 0px 0;
   text-align: center;
-  width: 300px;
+  width: 100%;
 }
 .single_sidebar_one_title span {
   padding-left: 30px;
@@ -90,19 +90,19 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
   }
 
 .asidepost-list{
-	width:300px;
+	width:100%;
 	height:auto;
 	padding:0 0 0 0;
 	background-color:#000;
 }
 .asidepost-list .hot_post{
-	width:300px;
+	width:100%;
 	height:212px;
 	padding:0 0 0 0;
 	border-top-width: 2px;
 }
 .asidepost-list .asidepost-list-li{
-	width:300px;
+	width:100%;
 	height:252px;
 }
 .hot_imginfo img{
@@ -112,11 +112,11 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
     transition-duration: 0.5s;
     transition-timing-function: initial;
     transition-delay: initial;
-	width:300px;
+	width:100%;
 	height:190px;
 }
 .hot_post_info {
-	width:300px;
+	width:100%;
 	height:70px;
 	text-align:left;
 	font-family: 'Lato', sans-serif;
@@ -308,7 +308,7 @@ img { max-width: 100%; height: auto; }
 	float:right;
 	max-width:290px;
 
-	margin-right:11%;
+	margin-right:10.5%;
 	height:85px;
 }
 .head-socials { float: right; max-width: 300px;padding-right:5px;}
@@ -542,7 +542,7 @@ section {
 }
 .single_sidebar_ad_site_ins{
 	display:inline-block;
-	width:300px;
+	width:100%;
 	height:600px
 }
 
@@ -569,7 +569,7 @@ footer{
 .single_include_one_title{width:840px;height:40px;margin-bottom:10px;}
 
 .single_content { overflow: hidden;  width:100%;float:left;}
-.single_container { width: 70%;  float:left;overflow:hidden;}
+.single_container { width: 72%;  float:left;overflow:hidden;}
 .single_post_content { width: 100%; float: left; color: #333; padding: 10px 5px 15px; }
 .single_post_content > article { overflow: hidden; }
 .single_srticle_ad_site{
