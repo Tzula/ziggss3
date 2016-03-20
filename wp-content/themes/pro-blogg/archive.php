@@ -30,7 +30,7 @@ get_header();
 				 					echo '<iframe src="http://player.vimeo.com/video/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?title=0&amp;byline=0&amp;portrait=0&amp;color=03b3fc" width="500" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 				 					break;
 				 				default:
-									<?php echo the_ID(); ?>
+									 echo $post->ID; 
 									echo '<div class="hr"><hr/></div>';
 									echo '<div class="grid_post_img" >
 												<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
