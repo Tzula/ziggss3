@@ -10,10 +10,6 @@ get_header();
 			<div class="home_posts">
 				<?php
 					$args = array_merge( $wp_query->query, array( 'posts_per_page' => 15 ) );
-
-var_dump($args);exit;
-
-
 					$query = new WP_Query($args);
 					if ( $query->have_posts() ) :
 						while ( $query->have_posts() ) : $query->the_post();
@@ -21,8 +17,6 @@ var_dump($args);exit;
 							$type = get_post_meta($post->ID,'page_featured_type',true);
 							$categories = get_the_category($post->ID);
 
-							//将object的对象转化成数组get_obhect_vars();
-							$categories = get_object_vars($categories[0]);
 							//获取文章的浏览次数
 							$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
 							$views = get_object_vars($rows[0]);
@@ -36,6 +30,7 @@ var_dump($args);exit;
 				 					echo '<iframe src="http://player.vimeo.com/video/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?title=0&amp;byline=0&amp;portrait=0&amp;color=03b3fc" width="500" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 				 					break;
 				 				default:
+									<?php echo the_ID(); ?>
 									echo '<div class="hr"><hr/></div>';
 									echo '<div class="grid_post_img" >
 												<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
