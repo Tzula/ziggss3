@@ -17,11 +17,6 @@ get_header();
 							$type = get_post_meta($post->ID,'page_featured_type',true);
 							$categories = get_the_category($post->ID);
 
-							//获取文章的浏览次数
-							$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
-							$views = get_object_vars($rows[0]);
-							//echo $post->ID;var_dump($views);exit;
-
 				 			switch ($type) {
 				 				case 'youtube':
 				 					echo '<iframe width="560" height="315" src="http://www.youtube.com/embed/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?wmode=transparent" frameborder="0" allowfullscreen></iframe>';
@@ -30,7 +25,10 @@ get_header();
 				 					echo '<iframe src="http://player.vimeo.com/video/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?title=0&amp;byline=0&amp;portrait=0&amp;color=03b3fc" width="500" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 				 					break;
 				 				default:
-									 echo $post->ID; 
+									 //echo $post->ID; 
+									//获取文章的浏览次数
+									$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
+									$views = get_object_vars($rows[0]);
 									echo '<div class="hr"><hr/></div>';
 									echo '<div class="grid_post_img" >
 												<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
