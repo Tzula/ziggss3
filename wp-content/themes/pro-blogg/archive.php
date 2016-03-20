@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<div class="home  _content" style="margin:0 auto;">
+<div class="home_content" style="margin:0 auto;">
 	<div class="container">
 		<div class="home_post_content">
 			<div class="archive_title">
