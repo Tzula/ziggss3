@@ -13,8 +13,7 @@ get_header();
 					$query = new WP_Query($args);
 					if ( $query->have_posts() ) :
 						while ( $query->have_posts() ) : $query->the_post();
-							echo '<div class="grid_post">
-									<h3><a href="'.get_permalink().'">'.get_the_title().'</a></h3>';
+							echo '<div class="grid_post">';
 							$type = get_post_meta($post->ID,'page_featured_type',true);
 							$categories = get_the_category($post->ID);
 
