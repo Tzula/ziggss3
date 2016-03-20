@@ -307,7 +307,8 @@ img { max-width: 100%; height: auto; }
 .head_right{
 	float:right;
 	max-width:290px;
-	padding-right:150px;
+
+	margin-right:11%;
 	height:85px;
 }
 .head-socials { float: right; max-width: 300px;padding-right:5px;}
@@ -451,7 +452,7 @@ img { max-width: 100%; height: auto; }
 .post_nav .prev_post a { height: 30px; width: 30px; background: url(images/new-prev.png) no-repeat; display: block; }
 .post_nav .next_post { float: right; width: auto; }
 .post_nav .next_post a { height: 30px; width: 30px; background: url(images/new-next.png) no-repeat; display: block; }
-.post_content .archive_title h2 {
+.home_post_content .archive_title h2 {
   border-left: 30px solid #000000;
   border-right: 30px solid #000000;
   display: inline-block;
