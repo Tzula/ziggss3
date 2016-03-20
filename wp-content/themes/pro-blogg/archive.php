@@ -16,6 +16,9 @@ get_header();
 							echo '<div class="grid_post">';
 							$type = get_post_meta($post->ID,'page_featured_type',true);
 							$categories = get_the_category($post->ID);
+							//获取文章的浏览次数
+							$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
+							$views = get_object_vars($rows[0]);
 
 				 			switch ($type) {
 				 				case 'youtube':
@@ -26,9 +29,6 @@ get_header();
 				 					break;
 				 				default:
 									 //echo $post->ID; 
-									//获取文章的浏览次数
-									$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
-									$views = get_object_vars($rows[0]);
 									echo '<div class="hr"><hr/></div>';
 									echo '<div class="grid_post_img" >
 												<a href="'.get_permalink().'"><img src="'.catch_that_image().'" style="border-top:2px;color:#00B7EE;" class="home_grid_post_img"></a>
