@@ -13,8 +13,8 @@ get_header();
 			'ignore_sticky_posts' => true
 			);
 			
-		$args = array_merge( $wp_query->query, $args0);
-		$the_query = new WP_Query( $args );
+		$args1 = array_merge( $wp_query->query, $args0);
+		$the_query = new WP_Query( $args1 );
 		if ( $the_query->have_posts() ) :
 			echo '<div class="home_slider"><ul class="slides">';
 			while ( $the_query->have_posts() ) : $the_query->the_post();
