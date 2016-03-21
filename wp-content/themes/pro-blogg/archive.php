@@ -21,7 +21,7 @@ get_header();
 							//获取文章的浏览次数
 							$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
 							$views = get_object_vars($rows[0]);
-							var_dump($views);exit;
+							var_dump($views['meta_value']);exit;
 				 			switch ($type) {
 				 				case 'youtube':
 				 					echo '<iframe width="560" height="315" src="http://www.youtube.com/embed/'.get_post_meta( get_the_ID(), 'page_video_id', true ).'?wmode=transparent" frameborder="0" allowfullscreen></iframe>';
