@@ -1,9 +1,8 @@
 <?php
 get_header();
-?>
-<?php
 get_slider();
 ?>
+
 <div class="home_content" style="margin:0 auto;">
 	<div class="container">
 		<div class="home_post_content">
