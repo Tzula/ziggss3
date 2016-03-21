@@ -2,7 +2,7 @@
 <?php 
 		if (dess_setting('dess_show_slider') == 1) :
 			
-			$args0 = array(
+			$args = array(
 				'post_type' => 'post',
 				'meta_key' => 'show_in_slider',
 				'meta_value' => 'yes',
@@ -10,7 +10,7 @@
 				'ignore_sticky_posts' => true
 				);
 				
-			$args = array_merge( $wp_query->query, $args0);
+			//$args = array_merge( $wp_query->query, $args0);
 			$the_query = new WP_Query( $args );
 			if ( $the_query->have_posts() ) :
 				echo '<div class="home_slider"><ul class="slides">';
