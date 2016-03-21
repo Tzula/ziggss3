@@ -108,12 +108,16 @@
 									<?php
 										$args2 = array(
 										'post_type' => 'post',
-										'posts_per_page' =>6,
+										'posts_per_page' =>9,
 										'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 										);
+
 										$query = new WP_Query( $args2 );
-										if ( $query->have_posts() ) :
-											while ( $query->have_posts() ) : $query->the_post();
+										if ( $query->have_posts() )
+										{
+											while ( $query->have_posts() )
+											{						
+												$query->the_post();
 												echo '<div class="single_grid_post">';
 												$type = get_post_meta($post->ID,'page_featured_type',true);
 												switch ($type) {
@@ -136,21 +140,23 @@
 												}
 												echo '<div class="single_grid_home_posts"></div>';
 												echo '</div>';
-											endwhile;?>
-							<!--</div>-->
+											}  //endwhile;
+											
+											?>
 									<?php
-										echo '<div class="single_load_more_content"><div class="single_load_more_text">';
+										echo '<div class="load_more_content"><div class="load_more_text">';
 											ob_start();
 												next_posts_link('LOAD MORE',$query->max_num_pages);
 												$buffer = ob_get_contents();
 											ob_end_clean();
-											if(!empty($buffer)) echo $buffer;
+											if(!empty($buffer)) {echo $buffer;}
 										echo'</div></div>';					
-									$max_pages = $query->max_num_pages;
-									wp_reset_postdata();
-								endif;?>
-								<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
-						</div>
+										$max_pages = $query->max_num_pages;
+										wp_reset_postdata();
+									}//endif	
+									?>
+									<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
+							</div>
 							<div class="single_clear"></div>
 					</div>
 				</div>		
