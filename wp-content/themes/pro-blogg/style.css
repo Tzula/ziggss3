@@ -415,6 +415,17 @@ img { max-width: 100%; height: auto; }
   float:left;
   z-index:800;
 }
+.head-top .container{
+	width:1000px;
+	margin:0 auto;
+}
+.head-top .container .head_right{
+	float:right;
+	max-width:300px;
+	padding-right:0;
+	height:85px;
+}
+
 .web-logo {float:left;margin-left:20px;}
 .head-nav { float: left; max-width: 767px;margin-left:50px;margin-top:50px;}
 .head-nav ul { list-style-type: none; margin: 0; padding: 0; font-size: 0; }
@@ -439,14 +450,8 @@ img { max-width: 100%; height: auto; }
 .slicknav_menu ul li a:hover,
 .slicknav_menu ul li ul li a:hover,
 .slicknav_nav .slicknav_row:hover { background: #333; color: #fff !important; border-radius: 0; }
-.head_right{
-	float:right;
-	max-width:290px;
 
-	margin-right:10.5%;
-	height:85px;
-}
-.head-socials { float: right; max-width: 300px;padding-right:5px;}
+.head-socials { float: right; max-width: 300px;padding-right:0px;}
 .head-socials ul {
   font-size: 0;
   list-style: outside none none;
@@ -462,17 +467,35 @@ img { max-width: 100%; height: auto; }
 }
 .head-logo { text-align: center; padding: 60px;  }
 .head-logo img { max-width: 100%; height: auto; }
-.head-search {
-  float: right; display: none;
-}
-.head_search{ width:285px;padding-right:5;max-width: 100%; height: auto;float:right;padding-top:5px;}
+.head_right_bottom{width:300px;height:auto}
+.head_right_bottom .head_search{ width:255px;padding-right:2px;height:40px;float:left;padding-top:5px;}
+.head_link{
+  width:40px;
+  float:right; 
+  height: 45px;
+  background: #fff;
+  box-sizing: border-box;
+  padding-top: 5px;
+  margin: 0 0 5px;}
 .search-form label { position: relative; }
-.search-form input[type="search"] { width: 280px; }
+.search-form input[type="search"] { width: 250px; }
 .search-form input[type="image"] {
   left: 90%;
   position: absolute;
   top: 2px;
 }
+.head_search input[type="text"] {
+  width: 255px;
+  height: 40px;
+  border: 2px solid #ddd;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  margin: 0 0 5px;
+}
+
+
+
 .search .post_content .search-field[type="text"] {
   background: #ffffff none repeat scroll 0 0;
 }

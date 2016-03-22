@@ -31,15 +31,24 @@
 					</ul>
 				</div>
 				<!-- 社交链接程序结束-->
-				<div class="head_search">
-					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-						<label>
-							<span class="screen-reader-text">Search for:</span>
-							<input type="text" class="search-field" placeholder="Search" value="<?php echo get_search_query() ?>" name="s" />
-							<input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/search-icon.jpg">
-						</label>
-					</form>
-				</div>
+				<div class="head_right_bottom">
+					<div class="head_search">
+						<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+							<label>
+								<span class="screen-reader-text">Search for:</span>
+								<input type="text" class="search-field" placeholder="Search" value="<?php echo get_search_query() ?>" name="s" />
+								<input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/search-icon.jpg">
+							</label>
+						</form>
+					</div>
+					<div class="head_link">
+						<button style="width:40px;height:38px;">
+						<img src="/wp-content/uploads/2016/03/web-links.png" width="40px" height="38px">
+						</button>
+						
+
+					</div>
+				</div><!-- class="head_right_bottom"结束-->
 			</div>
 			
 				<div class="head-nav">
