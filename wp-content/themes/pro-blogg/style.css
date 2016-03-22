@@ -478,24 +478,38 @@ img { max-width: 100%; height: auto; }
   padding-top: 5px;
   margin: 0 0 5px;
  }
- #show_links{
-	width:200px;
-	height:160px;
-	background: #fff;	
-	margin-top:120px;
-	float:right;
-	text-align:center;
-	 border: solid 1px #ccc;
-	 z-index:89;
-	 position:absolute;
-	 
- }
+ #show_links {
+  width: 300px;
+  height: auto;
+  background: #fff;
+  margin-top: 120px;
+  margin-left: 60%;
+  float: left;
+  text-align: left;
+  border: solid 1px #ccc;
+  z-index: 89;
+  position: absolute;
+}
  #show_links li{
 	list-style:none;
+}
+#show_links li a{
 	font-size: 14px;
-    font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color:  #0093ec;
+ }
+ #show_links .blog-list{
+	float:left;
+	list-type:none;
+ }
+ #show_links .blog-list .li-1 {
+	float:left;
+	text-align:left;
+ }
+ #show_links .blog-list .li-2 {
+	float:right;
+	text-align:left;
  }
 .search-form label { position: relative; }
 .search-form input[type="search"] { width: 250px; }
