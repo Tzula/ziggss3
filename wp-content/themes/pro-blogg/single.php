@@ -71,12 +71,12 @@
 						$(".test").hide();
 						$("#single_comments").click(function(){
 							alert(3333);
-							$(".test").show();
+							$('#single_comments_list').css('display','block');
+							alert(4444);
 						});
 					
 					</script>
-					<div class="test" >YouToBe</div>
-					<div id="single_comments_list" >
+					<div id="single_comments_list" style="display:none">
 						<div class="clear"></div>
 						<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 									<div class="home_blog_box">
