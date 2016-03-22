@@ -482,9 +482,9 @@ img { max-width: 100%; height: auto; }
 	width:200px;
 	height:160px;
 	background: #fff;	
-	padding-top:120px;
+	margin-top:120px;
 	float:right;
-	padding-right:2%;
+	text-align:center;
 	 border: solid 1px #ccc;
 	 z-index:89;
 	 position:absolute;
