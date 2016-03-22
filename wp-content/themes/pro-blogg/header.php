@@ -44,24 +44,24 @@
 					<div class="head_link">
 						<button style="width:40px;height:38px;" id="web_links">
 						<img src="/wp-content/uploads/2016/03/web-links.png" width="40px" height="38px">
-						</button>
-						<div id="show_links" style="display:none">
-							<ul class="blog-list related-blog-list">
-							<li class="title">Related blogs</li>
-							<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							</ul>
-							
-						</div>
-
+						</button>				
 					</div>
 				</div><!-- class="head_right_bottom"结束-->
+				
+			</div><!--head-right部分结束 -->
+			<div id="show_links" style="display:none">
+				<ul class="blog-list related-blog-list">
+				<li class="title" style="color:#aaa;font-size:20px;">Related blogs</li>
+				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				</ul>
+				
 			</div>
 			
 				<div class="head-nav">
