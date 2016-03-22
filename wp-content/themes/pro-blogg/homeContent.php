@@ -6,7 +6,7 @@
 			//此处用于获取首页内容数据
 			$args2 = array(
 				'post_type' => 'post',
-				'posts_per_page' => 6,
+				'posts_per_page' => 29,
 				'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 			);
 			$query = new WP_Query( $args2 );

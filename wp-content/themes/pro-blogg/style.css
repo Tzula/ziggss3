@@ -662,7 +662,7 @@ footer{
 .single_include_container { width: 100%;  float:left;overflow:hidden;}
 .single_include_one_title{width:670px;height:40px;margin-bottom:10px;}
 
-.single_content { overflow: hidden;  width:670px;float:left;}
+.single_content { overflow: hidden;  width:1000px;float:left;}
 .single_container { width: 670px;;  float:left;overflow:hidden;}
 .single_post_content { width: 670px;; float: left; color: #333; padding: 10px 0 15px; }
 .single_post_content > article { overflow: hidden; }
