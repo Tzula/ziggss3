@@ -46,7 +46,21 @@
 						<img src="/wp-content/uploads/2016/03/web-links.png" width="40px" height="38px">
 						</button>
 						<div id="show_links" style="display:none">
-						212222222
+							<ul class="blog-list related-blog-list">
+							<li class="title">Related blogs</li>
+							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							</ul>
+							<ul class="blog-list gmg-blog-list">
+							<li class="title">Blogs you may like</li>
+							<li><a href="#" data-ga="[Kinja Menu, Blogs You May Like Click, Deadspin]"><img  width="16" height="16" class="icon icon-prepend" src="">Deadspin</a></li>
+							<li><a href="#" data-ga="[Kinja Menu, Blogs You May Like Click, Gawker]"><img width="16" height="16" class="icon icon-prepend" src="">Gawker</a></li>
+							<li><a href="#" data-ga="[Kinja Menu, Blogs You May Like Click, Gizmodo]"><img width="16" height="16" class="icon icon-prepend" src="">Gizmodo</a></li>
+							<li><a href="#" data-ga="[Kinja Menu, Blogs You May Like Click, Jalopnik]"><img width="16" height="16" class="icon icon-prepend" src="">Jalopnik</a></li>
+							</ul>
 						</div>
 
 					</div>
@@ -69,10 +83,7 @@
 	<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
 	<script>	
 		$("#web_links").click(function(){
-			alert(3333);
-			$('#show_links').show(); alert(4444);
 			$('#show_links').css('display','block');
-			alert(5555);
 		});
 	
 	</script>
