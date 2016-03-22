@@ -26,8 +26,8 @@ get_header();
 							break;
 						default:
 							$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-							echo '<li><a class="home_slide_bg" href="'.get_permalink().'">'.$thumbnail[0].'</a><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
-							break;
+							echo '<li><a class="home_slide_bg" href="'.get_permalink().'"><img src="'.$thumbnail[0].'" width="250px";height="300px" ></a><a href="'.get_permalink().'">'. mb_strimwidth(get_the_title(),0,70,'……').'</a></li>';
+							break;  
 					}
 					
 				endwhile;
