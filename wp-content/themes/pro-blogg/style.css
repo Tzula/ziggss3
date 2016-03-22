@@ -489,6 +489,10 @@ img { max-width: 100%; height: auto; }
 	padding-top:20px;
 	float:right;
 	padding-right:12%;
+	 border: solid 1px #ccc;
+	 z-index:89;
+	 position:absolute;
+	 list-style:none;
 	
  }
 .search-form label { position: relative; }
