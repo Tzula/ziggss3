@@ -42,7 +42,7 @@
 						</form>
 					</div>
 					<div class="head_link">
-						<a style="width:40px;height:38px;" id="web_links">
+						<a href="#" style="width:40px;height:38px;" id="web_links">
 						<img src="/wp-content/uploads/2016/03/web-links.jpg" width="40px" height="38px">
 						</a>				
 					</div>
