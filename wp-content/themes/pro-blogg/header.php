@@ -42,10 +42,12 @@
 						</form>
 					</div>
 					<div class="head_link">
-						<button style="width:40px;height:38px;">
+						<button style="width:40px;height:38px;" id="web_links">
 						<img src="/wp-content/uploads/2016/03/web-links.png" width="40px" height="38px">
 						</button>
-						
+						<div id="show_links" style="display:none">
+						212222222
+						</div>
 
 					</div>
 				</div><!-- class="head_right_bottom"结束-->
@@ -63,3 +65,14 @@
 			</div>
 		</div>
 	<!--</header>-->
+
+	<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
+	<script>	
+		$("#web_links").click(function(){
+			alert(3333);
+			$('#show_links').show(); alert(4444);
+			$('#show_links').css('display','block');
+			alert(5555);
+		});
+	
+	</script>
