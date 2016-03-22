@@ -48,11 +48,14 @@
 						<div id="show_links" style="display:none">
 							<ul class="blog-list related-blog-list">
 							<li class="title">Related blogs</li>
-							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-							<li><a href="" data-ga="[Kinja Menu, Related Blog Click, thebests]" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+							<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
 							</ul>
 							
 						</div>
