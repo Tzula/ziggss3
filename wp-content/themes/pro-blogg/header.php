@@ -49,20 +49,7 @@
 				</div><!-- class="head_right_bottom"结束-->
 				
 			</div><!--head-right部分结束 -->
-			<div id="show_links" style="display:none">
-				<ul class="blog-list related-blog-list">
-				<li class="title" style="color:#aaa;font-size:20px;">Related blogs</li>
-				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
-				</ul>
-				
-			</div>
+			
 			
 				<div class="head-nav">
 					<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
@@ -76,7 +63,20 @@
 			</div>
 		</div>
 	<!--</header>-->
-
+		<div id="show_links" style="display:none">
+				<ul class="blog-list related-blog-list">
+				<li class="title" style="color:#aaa;font-size:20px;">Related blogs</li>
+				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href=""  class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				<li><a href="" class="icon--svg u-prepended"><img src="" width="16" height="16">The Bests</a></li>
+				</ul>
+				
+			</div>
 	<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
 	<script>	
 		$("#web_links").click(function(){
