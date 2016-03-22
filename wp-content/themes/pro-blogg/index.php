@@ -26,7 +26,7 @@ get_header();
 							break;
 						default:
 							$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-							echo '<li><a style="background-image: url('.$thumbnail[0].')" class="home_slide_bg" href="'.get_permalink().'"></a><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+							echo '<li><a style="background-image: url('..')" class="home_slide_bg" href="'.get_permalink().'">'.$thumbnail[0].'</a><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
 							break;
 					}
 					
