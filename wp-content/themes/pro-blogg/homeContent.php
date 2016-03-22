@@ -6,7 +6,7 @@
 			//此处用于获取首页内容数据
 			$args2 = array(
 				'post_type' => 'post',
-				'posts_per_page' => 29,
+				'posts_per_page' => 30,
 				'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 			);
 			$query = new WP_Query( $args2 );
@@ -23,7 +23,7 @@
 					$categories = get_object_vars($categories[0]);
 
 					//获取文章的浏览次数
-					$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
+					$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
 					$views = get_object_vars($rows[0]);
 					switch ($type) {
 						case 'youtube':
