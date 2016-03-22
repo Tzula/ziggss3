@@ -42,9 +42,9 @@
 						</form>
 					</div>
 					<div class="head_link">
-						<button style="width:40px;height:38px;" id="web_links">
+						<a style="width:40px;height:38px;" id="web_links">
 						<img src="/wp-content/uploads/2016/03/web-links.jpg" width="40px" height="38px">
-						</button>				
+						</a>				
 					</div>
 				</div><!-- class="head_right_bottom"结束-->
 				
