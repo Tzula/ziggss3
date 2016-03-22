@@ -68,13 +68,14 @@
 					[<a id="single_comments" href="#">Show Comment</a>]			
 					<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
 					<script>
+						$(".test").hide();
 						$("#single_comments").click(function(){
 							alert(3333);
-							alert($(".test").html());
+							$(".test").show();
 						});
 					
 					</script>
-					<div class="test" style="display:none">YouToBe</div>
+					<div class="test" >YouToBe</div>
 					<div id="single_comments_list" >
 						<div class="clear"></div>
 						<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
