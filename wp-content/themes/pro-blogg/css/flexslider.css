@@ -147,6 +147,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav .flex-next {
   right: 0px;
+  float:right;
   text-align: right;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
