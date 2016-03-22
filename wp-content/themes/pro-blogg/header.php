@@ -9,7 +9,7 @@
 	</head> 
 <body <?php body_class(); ?>>
 	<!--<header style="margin-bottom:10px;float:left;">-->
-		<div class="head-top">
+		<div class="head-top" style="width:100%">
 		<!--放置网站logo -->
 			<div class="web-logo">
 				<img src="/wp-content/uploads/2016/03/web-logo.png" width="150px" height="150px"> 

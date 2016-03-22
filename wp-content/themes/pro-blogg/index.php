@@ -13,7 +13,7 @@ get_header();
 				);
 			$the_query = new WP_Query( $args );
 			if ( $the_query->have_posts() ) :
-				echo '<div class="home_slider"><ul class="slides">';
+				echo '<div class="home_slider" style="margin:0 auto;"><ul class="slides">';
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 					$type = get_post_meta($post->ID,'page_featured_type',true);
 					switch ($type) {

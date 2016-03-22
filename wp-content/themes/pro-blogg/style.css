@@ -12,6 +12,141 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 */
 /* =WordPress Core
 -------------------------------------------------------------- */
+
+/*
+*首页内容部分
+*/
+.index_content{
+	width:1000px;
+	height:auto;
+	margin-top:10px;
+	min-height:690px;
+	z-index:600;
+	margin-top:20px;
+}
+.index_content_posts{
+	width:1000px;
+	height:auto;
+	float:left;
+	padding-top:20px;
+}
+.index_content_posts .index_grid_post_img img {
+	transition:all 0.3s ease-in-out; 
+}
+.index_content_posts .index_grid_post_img img:hover {
+	transform: scale(1.05);
+}
+.index_content_posts_grid_post{
+	width:320px;
+	height:300px;
+	margin-right:12px;
+	margin-bottom:10px;
+	float:left;
+}
+.index_post_hr{
+	width:320px;
+	height:2px;
+	margin-bottom:15px;
+    color:#DBDBDB;
+}
+.index_ad_site{
+	width:320px;
+	height:275px;
+	margin: 0 0 0px;
+	
+}
+.index_grid_post_img{
+	width:320px;
+	height:220px;
+	overflow:hidden;
+	border-top-style: solid;
+	border-top-color: #089E00;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: initial;
+	transition-delay: initial;
+	clip: rect(0px 325px 250px 0px);
+}
+.index_grid_post_img img{
+	width:320px;
+	height:220px;
+	overflow:hidden;	
+}
+.index_grid_post_bottom{
+	width:320px;
+	height:50px;
+	margin-top:10px;
+	float:left;
+}
+.index_grid_post_title{
+	width:280px;
+	height:50px;
+	float:left;
+	padding: 0 1px;
+	font-size: 17px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	overflow: hidden;
+	text-align:left;
+	color:#000;
+}
+.index_grid_post_title a:hover {
+  color: #00b7ee;
+  text-decoration: none;
+}
+
+.index_grid_post_title a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+.index_grid_post_views{
+  height: 35px;
+  color: #00b7ee;
+  width: 35px;
+  float: right;
+  padding-top:15px;
+}
+.index_views{
+  height: 35px;
+  color: #00b7ee;
+  width: 15px;
+  float: right;
+  font-size: 10px;
+}
+/*
+*此处设置首页内容图片左上角的类别
+*/
+.clearfix:after {
+  display: block;
+  content: 'clear';
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+}
+.imgmessage a {
+  padding: 2px 5px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #089E00;
+  float: left;
+}
+.imgmessage {
+  position: absolute;
+  color: #fff;
+  background: none;
+  margin-top: -220px;
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+
+
+
+
 /*
 *single页面内容部分
 */
@@ -342,7 +477,7 @@ img { max-width: 100%; height: auto; }
   background: #ffffff none repeat scroll 0 0;
 }
 /**HOME**/
-.home_slider {padding-top:100px;width:75%;text-align:center;margin-left:11%;margin-right:13%;z-index:700; }
+.home_slider {padding-top:100px;width:990px;;text-align:center;margin-left:11%;margin-right:13%;z-index:700; }
 .home_slider .slides { list-style: none;z-index:800; }
 .home_slider .slides li { height: 280px; position: relative; overflow: hidden; width:250px;  }
 .home_slider .slides li a:not(.home_slide_bg) {
@@ -358,12 +493,12 @@ img { max-width: 100%; height: auto; }
 .home_slider .slides li a.home_slide_bg { width: 90%; height: 100%; position: absolute; background: rgba(0, 0, 0, 0) none no-repeat scroll center center / cover ; transition:all 0.3s ease-in-out; }
 .home_slider .slides li a.home_slide_bg:hover { transform: scale(1.05); }
 .home_slider .slides iframe { width: 100%; height: 100%; }
-.home_slider .flex-direction-nav .flex-prev { background: url(images/prev.png) no-repeat; left: 11%; }
-.home_slider .flex-direction-nav .flex-next { background: url(images/next.png) no-repeat; right: 14%; }
+.home_slider .flex-direction-nav .flex-prev { background: url(images/prev.png) no-repeat; left: 15%; }
+.home_slider .flex-direction-nav .flex-next { background: url(images/next.png) no-repeat; right: 15%; }
 .home_slider .flex-direction-nav a { width: 45px; height: 71px; text-indent: 999px; opacity: 1; }
 .home_slider .flex-direction-nav a:before { display: none; }
 
-.home_posts .grid_post { width: 325px; margin: 0 0 10px;padding:0 8px; }
+.home_posts .grid_post { width: 325px; margin: 0 0 10px;}
 .home_posts .grid_post h3 a:hover { text-decoration: underline; }
 .home_posts .grid_post .grid_post_img { overflow: hidden; height:203px;width:325px;  border-top-style: solid;
   border-top-color: #089E00;transition-property: all;
@@ -391,36 +526,6 @@ img { max-width: 100%; height: auto; }
   width: 100%; height: 215px;
 }
 .content .container {  overflow: hidden; }
-/*
-*此处设置首页内容图片左上角的类别
-*/
-.clearfix:after {
-  display: block;
-  content: 'clear';
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-  height: 0;
-}
-.imgmessage a {
-  padding: 10 5px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #089E00;
-  float: left;
-}
-.imgmessage {
-  position: absolute;
-  color: #fff;
-  background: none;
-  top: 18px;
-  width: 100%;
-  height: 18px;
-  line-height: 18px;
-  font-size: 12px;
-}
-
-
 
 /**BLOG**/
 .post_content .blog_post_box { padding: 0 0 35px; 
@@ -557,7 +662,7 @@ footer{
 .single_include_container { width: 100%;  float:left;overflow:hidden;}
 .single_include_one_title{width:670px;height:40px;margin-bottom:10px;}
 
-.single_content { overflow: hidden;  width:1000px;float:left;}
+.single_content { overflow: hidden;  width:670px;float:left;}
 .single_container { width: 670px;;  float:left;overflow:hidden;}
 .single_post_content { width: 670px;; float: left; color: #333; padding: 10px 0 15px; }
 .single_post_content > article { overflow: hidden; }
@@ -579,7 +684,7 @@ footer{
 }
 #single_comments_list{
 	display:none;
-	width:840px;
+	width:670px;
 }
 
 /**CONTENT
