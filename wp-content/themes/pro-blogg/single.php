@@ -68,15 +68,16 @@
 					[<a id="single_comments" href="#">Show Comment</a>]			
 					<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
 					<script>
-						$(".test").hide();
+						$("#single_comments_list").hide();
 						$("#single_comments").click(function(){
 							alert(3333);
-							$('#single_comments_list').css('display','block');
+							$('#single_comments_list').show(); alert(4444);
+							//$('#single_comments_list').css('display','block');
 							alert(4444);
 						});
 					
 					</script>
-					<div id="single_comments_list" style="display:none">
+					<div id="single_comments_list" >
 						<div class="clear"></div>
 						<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 									<div class="home_blog_box">
