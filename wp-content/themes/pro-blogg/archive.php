@@ -22,7 +22,7 @@ get_header();
 					$categories = get_object_vars($categories[0]);
 
 					//获取文章的浏览次数
-					$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
+					$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
 					$views = get_object_vars($rows[0]);
 					switch ($type) {
 						case 'youtube':
@@ -40,7 +40,7 @@ get_header();
 						echo '<div class="imgmessage clearfix" ><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
 						echo '<div class="index_grid_post_bottom">';
 							echo '<div class="index_grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></div>';
-							echo '<div class="index_grid_post_views" ><img src="./wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px"; style="float:left;">';
+							echo '<div class="index_grid_post_views" ><img src="/wp-content/uploads/2016/03/hits.png" width="20px";height="20px"; style="float:left;">';
 							echo '<span class="index_views">';  echo $views['meta_value'];
 							echo '</span></div>';
 						echo '</div>';
