@@ -487,7 +487,8 @@ img { max-width: 100%; height: auto; }
 	font-weight: 400;
 	color:  #0093ec;
 	padding-top:20px;
-	padding-right:15%;
+	float:right;
+	padding-right:12%;
 	
  }
 .search-form label { position: relative; }
