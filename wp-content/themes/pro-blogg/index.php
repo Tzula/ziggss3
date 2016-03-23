@@ -140,5 +140,5 @@ get_header();
 		?>	
 <?php
 get_homeContent();
-get_footer();
+//get_footer();
 ?>
