@@ -22,7 +22,7 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 	margin-top:10px;
 	min-height:690px;
 	z-index:600;
-	margin-top:20px;
+	top:20px;
 }
 .index_content_posts{
 	width:1000px;
@@ -426,7 +426,7 @@ img { max-width: 100%; height: auto; }
 	height:85px;
 }
 
-.web-logo {float:left;margin-left:20px;}
+.web-logo {float:left;margin-left:10px;}
 .head-nav { float: left; max-width: 767px;margin-left:50px;margin-top:50px;}
 .head-nav ul { list-style-type: none; margin: 0; padding: 0; font-size: 0; }
 .head-nav ul li { display: inline-block; position: relative; margin: 0 5px 0 0; }

@@ -66,7 +66,7 @@
 					<?php the_tags( '<div class="post_tags">Tags: ', ', ', '</div>' ); ?> 
 					<!--此处为文章的评论部分，默认为隐藏状态-->
 					[<a id="single_comments" href="#">Show Comment</a>]			
-					<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
+					<script type="text/javascript" src="./wp-content/themes/pro-blogg/js/jquery-1.8.3.min.js"></script>
 					<script>
 						
 						$("#single_comments").click(function(){

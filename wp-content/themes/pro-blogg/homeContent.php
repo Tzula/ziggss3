@@ -57,7 +57,7 @@
 								echo '<div class="imgmessage clearfix" ><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
 								echo '<div class="index_grid_post_bottom">';
 									echo '<div class="index_grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></div>';
-									echo '<div class="index_grid_post_views" ><img src="./wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px"; style="float:left;">';
+									echo '<div class="index_grid_post_views" ><img src="/wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px"; style="float:left;">';
 									echo '<span class="index_views">';  echo $views['meta_value'];
 									echo '</span></div>';
 								echo '</div>';
