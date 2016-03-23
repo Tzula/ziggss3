@@ -89,7 +89,7 @@ get_header();
 			foreach ($sliderImg as $key => $list) {
 				if ($key < 16) {
 					for ($i = 0; $i<4; $i++) {
-						if (!is_int($key/3)) {
+						if (!is_int(($key+1)/5)) {
 							$images[$i][] = $list;
 						}		
 					}
