@@ -27,7 +27,7 @@ $(function(){
 #owl-demo li{position:relative;float:left;margin:0px 0px 0 0;overflow:hidden;_display:inline;}
 #owl-demo .li1{width:584px;height:389px;margin:0px 10px 0 0;}
 #owl-demo .li2{width:396px;height:210px;}
-#owl-demo .li3{height:176px;margin-top:10px;margin-bottom:3px;}
+#owl-demo .li3{height:170px;margin-top:10px;margin-bottom:9px;}
 #owl-demo .li-3{margin-right:10px;}
 #owl-demo .txt{position:absolute;left:0;bottom:-86px;_bottom:-1px;width:100%;padding:6px 0;font-size:12px;color:#fff;background:url(/wp-content/themes/pro-blogg/images/overlay.png);background:rgba(0, 0, 0, .7);transition:bottom 0.3s ease-out 0s;}
 #owl-demo h3{padding:0 15px;font-family:"Microsoft Yahei";font-size:18px;font-weight:500;}
@@ -117,7 +117,7 @@ get_header();
 						</li>';
 						echo '<li class="li3 li-3" style="width:193px;">
 							  <a href="'.$list[2]['getTheLink'].'"><img src="'.$list[2]['imgUrl'].'" alt="yi Photos lost"
-							  style="width:193px;height:176px;"></a>
+							  style="width:193px;height:170px;"></a>
 							  <div class="txt">
 								<h5><a href="'.$list[2]['getTheLink'].'">'.mb_strimwidth($list[2]['title'],0,40,'……').'</a></h5>
 								<p></p>
@@ -125,7 +125,7 @@ get_header();
 						</li>';
 						echo '<li class="li3" style="width:193px;">
 							  <a href="'.$list[3]['getTheLink'].'"><img src="'.$list[3]['imgUrl'].'" alt="yi Photos lost"
-							  style="width:193px;height:176px;"></a>
+							  style="width:193px;height:170px;"></a>
 							  <div class="txt">
 								<h5><a href="'.$list[3]['getTheLink'].'">'.mb_strimwidth($list[3]['title'],0,40,'……').'</a></h5>
 								<p></p>
