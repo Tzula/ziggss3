@@ -141,7 +141,7 @@
 			</ul>
 				
 			</div>
-	<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.11.2.min.js" ></script>
+	<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.8.3.min.js"></script>
 	<script>	
 		$("#web_links").click(function(){
 			if ($('#show_links').css('display') == 'none')
