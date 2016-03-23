@@ -1,7 +1,7 @@
 <?php wp_homeContent(); ?>
 <div class="index_content" style="margin:90px auto;">
-	<div class="index_container">
-	<div class="index_content_posts">  <!--index_post_content-->
+	<!--<div class="index_container">-->
+	<!--<div class="index_content_posts">  index_post_content-->
 		<div class="index_posts">
 	    <?php
 			//此处用于获取首页内容数据
@@ -92,8 +92,8 @@
 		?>
 		
 		<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
-	</div><!--index_content_posts 结束 -->
+	<!--</div>index_content_posts 结束 -->
 	
 	<div class="index_clear"></div>
-	</div> <!--index_container结束-->
+	<!--</div> index_container结束-->
 </div> <!--index_content结束-->
