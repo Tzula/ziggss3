@@ -22,8 +22,8 @@ $(function(){
 <style type="text/css">
 *{margin:0;padding:0;list-style-type:none;}
 #owl-demo img{border:0 none;}
-#owl-demo{position:relative;width:990px;height:389px;padding-bottom:0px;margin:10px auto 10px auto;}
-#owl-demo ul{margin:-10px -10px 0 0;overflow:hidden;zoom:1;}
+#owl-demo{position:relative;width:990px;height:389px;padding-bottom:0px;margin:20px auto 10px auto;}
+#owl-demo ul{margin:10px -10px 0 0;overflow:hidden;zoom:1;}
 #owl-demo li{position:relative;float:left;margin:0px 0px 0 0;overflow:hidden;_display:inline;}
 #owl-demo .li1{width:584px;height:389px;margin:0px 10px 0 0;}
 #owl-demo .li2{width:396px;height:210px;}
