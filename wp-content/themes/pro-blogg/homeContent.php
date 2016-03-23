@@ -1,8 +1,7 @@
 <?php wp_homeContent(); ?>
-<div class="index_content" style="margin:90px auto;">
-	<!--<div class="index_container">-->
-	<!--<div class="index_content_posts">  index_post_content-->
-		<div class="index_posts">
+<div class="index_content" style="margin:0 auto;">
+	<div class="index_content_posts">
+		
 	    <?php
 			//此处用于获取首页内容数据
 			$args2 = array(
@@ -24,7 +23,7 @@
 					$categories = get_object_vars($categories[0]);
 
 					//获取文章的浏览次数
-					$rows = $wpdb->get_results( "SELECT meta_value FROM yy_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
+					$rows = $wpdb->get_results( "SELECT meta_value FROM wp_postmeta WHERE meta_key = 'views' AND post_id = $post->ID" );
 					$views = get_object_vars($rows[0]);
 					switch ($type) {
 						case 'youtube':
@@ -58,7 +57,7 @@
 								echo '<div class="imgmessage clearfix" ><a href="./category/'.strtolower($categories['name']).'">'.$categories['name'].'</a></div>';
 								echo '<div class="index_grid_post_bottom">';
 									echo '<div class="index_grid_post_title" ><a href="'.get_permalink().'">'.mb_strimwidth(get_the_title(),0,60,'……').'</a></div>';
-									echo '<div class="index_grid_post_views" ><img src="/wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px"; style="float:left;">';
+									echo '<div class="index_grid_post_views" ><img src="./wp-content/themes/pro-blogg/images/hits.png" width="20px";height="20px"; style="float:left;">';
 									echo '<span class="index_views">';  echo $views['meta_value'];
 									echo '</span></div>';
 								echo '</div>';
@@ -72,7 +71,7 @@
 					echo '</div>';	//class="index_content_posts_grid_post“结束				
 				} //while 结束
 				?>
-			</div> <!--class="index_posts“结束-->	
+			</div>
 			<?php
 				//此处为加载更多部分内容 “more”
 				echo '<div class="load_more_content">';
@@ -92,8 +91,7 @@
 		?>
 		
 		<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
-	<!--</div>index_content_posts 结束 -->
-	
+		<!--</div>-->
+	</div>
 	<div class="index_clear"></div>
-	<!--</div> index_container结束-->
-</div> <!--index_content结束-->
+</div>

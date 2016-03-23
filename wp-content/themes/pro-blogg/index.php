@@ -139,6 +139,6 @@ get_header();
 		endif;
 		?>	
 <?php
-//get_homeContent();
+get_homeContent();
 get_footer();
 ?>
