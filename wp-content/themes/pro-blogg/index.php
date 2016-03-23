@@ -26,7 +26,7 @@ get_header();
 							break;
 						default:
 							$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-							echo '<li style="width:280px;height:100%"><a class="home_slide_bg" href="'.get_permalink().'"><img src="'.$thumbnail[0].'" width="250px";height="300px" ></a><a href="'.get_permalink().'">'. mb_strimwidth(get_the_title(),0,70,'……').'</a></li>';
+							echo '<li style="width:280px;height:300px;"><a class="home_slide_bg" href="'.get_permalink().'"><img src="'.$thumbnail[0].'" width="250px";height="300px" ></a><a href="'.get_permalink().'">'. mb_strimwidth(get_the_title(),0,70,'……').'</a></li>';
 							break;  
 					}
 					
