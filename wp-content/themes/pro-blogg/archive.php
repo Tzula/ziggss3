@@ -9,7 +9,7 @@ get_header();
 	<div class="index_content_posts">
 		
 	    <?php
-			$args = array_merge( $wp_query->query, array( 'posts_per_page' => 15 ) );
+			$args = array_merge( $wp_query->query, array( 'posts_per_page' => 30) );
 					$query = new WP_Query($args);
 			if ($query->have_posts()) 
 			{
@@ -51,7 +51,9 @@ get_header();
 					echo '<div class="grid_home_posts"></div>';
 					echo '</div>';	//class="index_content_posts_grid_post“结束				
 				} //while 结束
-
+				?>
+		</div>
+		<?php
 				//此处为加载更多部分内容 “more”
 				echo '<div class="load_more_content">';
 				echo '<div class="load_more_text">';
@@ -74,6 +76,7 @@ get_header();
 	</div>
 	<div class="index_clear"></div>
 </div>
+
 <?php
 get_footer();
 ?>
