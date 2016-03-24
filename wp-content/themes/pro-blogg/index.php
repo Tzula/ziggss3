@@ -138,10 +138,14 @@ get_header();
 		echo '</div>';
 		endif;
 		?>	
-<?php
-get_homeContent();
+<section class="main news-main">
+	<div class="clearfix">
 
-?>
+	<?php
+	get_homeContent();
+	?>
+	</div> <!-- clearfix部分结束-->
+</section>
 <div class="home_footer">
 	<?php
 	echo get_footer();
