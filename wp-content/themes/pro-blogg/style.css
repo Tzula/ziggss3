@@ -871,9 +871,9 @@ footer{
 }
 
 .content { overflow: hidden; margin: 0 0 40px; width:1165px;}
-.home_content{width:80%;height:auto;margin-top:20px;margin-right:auto; margin-left:auto;text-align:center;min-height:689px;z-index:400;}
-.home_post_content{width: 100%; float: left; color: #333; padding: 20px 10px 30px; min-height:689px;}
-.home_posts{width: 100%;float: left;min-height:689px;}
+.home_content{width:1000px;height:auto;margin-top:20px;margin-right:auto; margin-left:auto;text-align:center;min-height:689px;z-index:400;}
+.home_post_content{width: 1000px; float: left; color: #333; padding: 20px 0px 30px; min-height:689px;}
+.home_posts{width: 1000px;float: left;min-height:689px;}
 
 
 /*.container { width: 1165px; margin: 0 auto; float:left;overflow:hidden;}*/
