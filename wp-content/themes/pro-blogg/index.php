@@ -145,6 +145,6 @@ get_header();
 	
 <div class="home_footer">
 	<?php
-	echo get_footer();
+	//echo get_footer();
 	?>
 </div>
