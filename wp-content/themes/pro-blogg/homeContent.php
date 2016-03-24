@@ -92,6 +92,7 @@
 		
 		<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
 		<!--</div>-->
+		<div class="index_clear"></div>
 	</div>
-	<div class="index_clear"></div>
+	
 </div>
