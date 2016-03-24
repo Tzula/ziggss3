@@ -95,17 +95,17 @@ get_header();
 					case $key < 4 :
 						$images[$j][] = $list;
 						break;
-					case $key == 4 && $key < 8 :
+					case 4 < $key < 8 || $key == 4:
 						$j = $j + 1;
 						$images[$j][] = $list;
 						$j = 0;
 						break;
-					case $key == 8 && $key < 12 :
+					case $key == 8 || 8 < $key < 12 :
 						$j = $j + 2;
 						$images[$j][] = $list;
 						$j = 0;
 						break;
-					case $key == 12 && $key < 16 :
+					case $key == 12 || 12 < $key < 16 :
 						$j = $j + 3;
 						$images[$j][] = $list;
 						$j = 0;
