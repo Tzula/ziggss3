@@ -67,9 +67,9 @@ get_header();
 			$the_query = new WP_Query( $args );
 			$sliderImg = array();
 			$images = array();
+			$i = 0; 
+			$j = 0;
 			if ( $the_query->have_posts() ) :
-				$i = 0; 
-				$j = 0;
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 					$type = get_post_meta($post->ID,'page_featured_type',true);
 					switch ($type) {
@@ -81,52 +81,37 @@ get_header();
 							break;
 						default: 
 							$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-							//$sliderImg[  ] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());;
-							switch ($i) {
-								case $i < 4 :
-									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());
-									$i = $i + 1;
-									break;
-								case $i == 4 && $i < 8 :
-									$j = $j + 1;
-									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());
-									$i = $i + 1;
-									$j = 0;
-									break;
-								case $i == 8 && $i < 12 :
-									$j = $j + 2;
-									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());
-									$i = $i + 2;
-									$j = 0;
-									break;
-								case $i == 12 && $i < 16 :
-									$j = $j + 3;
-									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());
-									$i = $i + 1;
-									$j = 0;
-									break;
-							}
-													
+							$sliderImg[] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());;
+																			
 							break; 
 						}
 				endwhile;
 				wp_reset_postdata();
 			endif;
 			//var_dump($images);exit;
-			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组
+			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组*/
 			foreach ($sliderImg as $key => $list) {
-				if ($key < 16) {
-					for ($i = 0; $i<4; $i++) {
-						switch (($key+1)/5)) {
-							case 
-							if (!is_int(($key+1)/5)) {
-								$images[$i][] = $list;
-							}	
-						}
-							
-					}
-				}	
-			}*/
+				switch ($key) {
+					case $key < 4 :
+						$images[$j][] = $list;
+						break;
+					case $key == 4 && $key < 8 :
+						$j = $j + 1;
+						$images[$j][] = $list;
+						$j = 0;
+						break;
+					case $key == 8 && $key < 12 :
+						$j = $j + 2;
+						$images[$j][] = $list;
+						$j = 0;
+						break;
+					case $key == 12 && $key < 16 :
+						$j = $j + 3;
+						$images[$j][] = $list;
+						$j = 0;
+						break;
+				}
+			}
 			echo '<div id="owl-demo" class="owl-carousel">';
 			//循环输出轮播图
 			foreach ($images as $key => $list) {
