@@ -90,28 +90,30 @@ get_header();
 			endif;
 			//var_dump($images);exit;
 			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组*/
+			echo count($sliderImg);
 			foreach ($sliderImg as $key => $list) {
 				switch ($key) {
-					case $key < 5 :
+					case $key < 4 :
 						$images[$j][] = $list;
 						break;
-					case $key > 4 && $key < 9 :
+					case $key > 3 && $key < 8 :
 						$j = $j + 1;
 						$images[$j][] = $list;
 						$j = 0;
 						break;
-					case $key > 8 && $key < 13:
+					case $key > 7 && $key < 12:
 						$j = $j + 2;
 						$images[$j][] = $list;
 						$j = 0;
 						break;
-					case $key > 12 && $key < 17:
+					case $key > 11 && $key < 16:
 						$j = $j + 3;
 						$images[$j][] = $list;
 						$j = 0;
 						break;
 				}
 			}
+			var_dump($images);exit;
 			echo '<div id="owl-demo" class="owl-carousel">';
 			//循环输出轮播图
 			foreach ($images as $key => $list) {
