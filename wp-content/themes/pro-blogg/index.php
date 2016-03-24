@@ -22,7 +22,7 @@ $(function(){
 <style type="text/css">
 *{margin:0;padding:0;list-style-type:none;}
 #owl-demo img{border:0 none;}
-#owl-demo{position:relative;width:990px;height:389px;padding-bottom:0px;margin:20px auto 10px auto;}
+#owl-demo{position:relative;width:990px;height:389px;padding-bottom:0px;margin:20px auto 10px auto;z-index:800;}
 #owl-demo ul{margin:10px -10px 0 0;overflow:hidden;zoom:1;}
 #owl-demo li{position:relative;float:left;margin:0px 0px 0 0;overflow:hidden;_display:inline;}
 #owl-demo .li1{width:584px;height:389px;margin:0px 10px 0 0;}
@@ -88,8 +88,7 @@ get_header();
 				endwhile;
 				wp_reset_postdata();
 			endif;
-			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组
-			echo count($sliderImg);
+			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组*/
 			foreach ($sliderImg as $key => $list) {
 				switch ($key) {
 					case $key < 5 :
@@ -106,7 +105,7 @@ get_header();
 						break;
 				}
 			}
-			*/
+			
 			//从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组
 			foreach ($sliderImg as $key => $list) {
 				if ($key < 16) {
@@ -160,12 +159,11 @@ get_header();
 		echo '</div>';
 		endif;
 		?>	
-
+<div style="width:100%;height:auto;min-height:689px;margin-top:30px;margin-right: auto;margin-left: auto;z-index: 400;top:500px;">
 	<?php
 	get_homeContent();
-	?>
-	
-<div class="home_footer">
+	?
+
 	<?php
 	echo get_footer();
 	?>
