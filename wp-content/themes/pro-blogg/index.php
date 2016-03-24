@@ -140,5 +140,10 @@ get_header();
 		?>	
 <?php
 get_homeContent();
-get_footer();
+
 ?>
+<div class="home_footer">
+	<?php
+	echo get_footer();
+	?>
+</div>

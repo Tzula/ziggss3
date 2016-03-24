@@ -117,6 +117,12 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
   float: right;
   font-size: 10px;
 }
+.index_footer{
+	margin-bottom:0px;
+	width:100%px;
+	max-height:200px;	margin-top:10px;
+	
+}
 /*
 *此处设置首页内容图片左上角的类别
 */
