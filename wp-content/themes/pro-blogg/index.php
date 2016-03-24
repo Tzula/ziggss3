@@ -112,7 +112,7 @@ get_header();
 				endwhile;
 				wp_reset_postdata();
 			endif;
-			var_dump($images);exit;
+			//var_dump($images);exit;
 			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组
 			foreach ($sliderImg as $key => $list) {
 				if ($key < 16) {
