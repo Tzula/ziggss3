@@ -1,7 +1,6 @@
 <?php wp_homeContent(); ?>
-<div class="home_content" style="margin:90px auto;">
-	<div class="container">
-		<div class="home_post_content">
+<div class="index_content" style="margin:90px auto;">
+	<div class="clearfix">
 	<div class="index_content_posts">
 		
 	    <?php
@@ -93,8 +92,8 @@
 		?>
 		
 		<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
-		</div>
-		<?php //get_sidebar(); ?>
-		<div class="clear"></div>
+		<!--</div>-->
+		<div class="index_clear"></div>
 	</div>
-	</div>
+	</div> <!--end clearfix-->
+</div> 
