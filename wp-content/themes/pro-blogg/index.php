@@ -93,27 +93,22 @@ get_header();
 			echo count($sliderImg);
 			foreach ($sliderImg as $key => $list) {
 				switch ($key) {
-					case $key < 4 :
-						$images[$j][] = $list;
+					case $key < 5 :
+						$images[0][] = $list;
 						break;
-					case $key > 3 && $key < 8 :
-						$j = $j + 1;
-						$images[$j][] = $list;
-						$j = 0;
+					case $key > 4 && $key < 9 :		
+						$images[1][] = $list;
 						break;
-					case $key > 7 && $key < 12:
-						$j = $j + 2;
-						$images[$j][] = $list;
-						$j = 0;
+					case $key > 8 && $key < 13:
+						$images[2][] = $list;
 						break;
-					case $key > 11 && $key < 16:
-						$j = $j + 3;
-						$images[$j][] = $list;
-						$j = 0;
+					case $key > 12 && $key < 17:
+						$images[3][] = $list;
 						break;
 				}
 			}
-			var_dump($images);exit;
+			//var_dump($sliderImg);exit;
+			//var_dump($images);exit;
 			echo '<div id="owl-demo" class="owl-carousel">';
 			//循环输出轮播图
 			foreach ($images as $key => $list) {
