@@ -24,8 +24,7 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 	z-index:600;
 	top:20px;
 }
-.index_container { width:auto; margin: 0 auto; }
-.index_post_content{width: 100%; float: left; color: #333; padding: 20px 10px 30px; min-height:689px;}
+
 .index_content_posts{
 	width:1000px;
 	height:auto;
@@ -46,6 +45,35 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 	margin-bottom:10px;
 	float:left;
 }
+
+
+/*
+*重新布局部分*/
+.index_container { width:auto; margin: 0 auto; }
+.index_post_content{width: 100%; float: left; color: #333; padding: 20px 10px 30px; min-height:689px;}
+
+.index_posts{
+	width:1000px;
+	height:auto;
+	float:left;
+	padding-top:20px;
+}
+.index_posts .index_grid_post_img img {
+	transition:all 0.3s ease-in-out; 
+}
+.index_posts .index_grid_post_img img:hover {
+	transform: scale(1.05);
+}
+.index_grid_post{
+	width:320px;
+	height:300px;
+	margin-right:5px;
+	margin-left:5px;
+	margin-bottom:10px;
+	float:left;
+}
+/**重新布局部分结束*/
+
 .index_post_hr{
 	width:320px;
 	height:2px;
