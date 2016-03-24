@@ -163,7 +163,7 @@
 							<div class="single_clear"></div>
 					</div>
 				</div>		
-			</div>		
+			<!--</div>		-->
 		</div><!-- class="include_homeContent"部分结束-->
 	</div><!-- class="single_container"部分结束-->	
 		<div class="single_sidebar">
