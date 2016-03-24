@@ -145,6 +145,7 @@
 											}  //endwhile;
 											
 											?>
+									</div>
 									<?php
 										echo '<div class="load_more_content"><div class="load_more_text">';
 											ob_start();
