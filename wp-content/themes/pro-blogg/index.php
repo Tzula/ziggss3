@@ -88,8 +88,7 @@ get_header();
 				endwhile;
 				wp_reset_postdata();
 			endif;
-			//var_dump($images);exit;
-			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组*/
+			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组
 			echo count($sliderImg);
 			foreach ($sliderImg as $key => $list) {
 				switch ($key) {
@@ -107,8 +106,17 @@ get_header();
 						break;
 				}
 			}
-			//var_dump($sliderImg);exit;
-			//var_dump($images);exit;
+			*/
+			//从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组
+			foreach ($sliderImg as $key => $list) {
+				if ($key < 16) {
+					for ($i = 0; $i<4; $i++) {
+						if (!is_int(($key+1)/5)) {
+							$images[$i][] = $list;
+						}		
+					}
+				}	
+			}
 			echo '<div id="owl-demo" class="owl-carousel">';
 			//循环输出轮播图
 			foreach ($images as $key => $list) {
