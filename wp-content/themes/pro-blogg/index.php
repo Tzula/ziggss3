@@ -84,26 +84,26 @@ get_header();
 							//$sliderImg[  ] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());;
 							switch ($i) {
 								case $i < 4 :
-									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());;
+									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());
 									$i = $i + 1;
 									break;
 								case $i == 4 && $i < 8 :
 									$j = $j + 1;
-									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());;
+									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());
 									$i = $i + 1;
-									$j = 0
+									$j = 0;
 									break;
 								case $i == 8 && $i < 12 :
 									$j = $j + 2;
-									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());;
+									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());
 									$i = $i + 2;
-									$j = 0
+									$j = 0;
 									break;
 								case $i == 12 && $i < 16 :
 									$j = $j + 3;
-									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());;
+									$images[$j][] = array('imgUrl' => $thumbnail[0], 'title' => get_the_title(), 'getTheLink' => get_permalink());
 									$i = $i + 1;
-									$j = 0
+									$j = 0;
 									break;
 							}
 													
