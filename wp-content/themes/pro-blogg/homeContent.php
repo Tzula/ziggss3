@@ -1,5 +1,6 @@
 <?php wp_homeContent(); ?>
 <div class="index_content" style="margin:90px auto;">
+	<div class="clearfix">
 	<div class="index_content_posts">
 		
 	    <?php
@@ -94,5 +95,5 @@
 		<!--</div>-->
 		<div class="index_clear"></div>
 	</div>
-	
-</div>
+	</div> <!--end clearfix-->
+</div> 
