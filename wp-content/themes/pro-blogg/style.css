@@ -780,7 +780,8 @@ footer{
 	width: 210px;
 	height: 210px;
 	overflow:hidden;
-    margin-right:13px;
+    margin-right:6px;
+	margin-left:6px;
 	float:left;
 }
    
