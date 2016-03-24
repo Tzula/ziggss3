@@ -165,6 +165,6 @@ get_header();
 	?
 
 	<?php
-	echo get_footer();
+	get_footer();
 	?>
 </div>
