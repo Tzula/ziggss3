@@ -92,20 +92,20 @@ get_header();
 			/*从此处开始循环输出轮播图片,每三张图片存入一个数组组成一个三维数组*/
 			foreach ($sliderImg as $key => $list) {
 				switch ($key) {
-					case $key < 4 :
+					case $key < 5 :
 						$images[$j][] = $list;
 						break;
-					case $key > 3 && $key < 8 :
+					case $key > 4 && $key < 9 :
 						$j = $j + 1;
 						$images[$j][] = $list;
 						$j = 0;
 						break;
-					case $key > 7 && $key < 12:
+					case $key > 8 && $key < 13:
 						$j = $j + 2;
 						$images[$j][] = $list;
 						$j = 0;
 						break;
-					case $key > 11 && $key < 16:
+					case $key > 12 && $key < 17:
 						$j = $j + 3;
 						$images[$j][] = $list;
 						$j = 0;
