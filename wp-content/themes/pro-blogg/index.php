@@ -117,7 +117,6 @@ get_header();
 					}
 				}	
 			}
-			
 			echo '<div id="owl-demo" class="owl-carousel">';
 			//循环输出轮播图
 			foreach ($images as $key => $list) {
@@ -161,15 +160,13 @@ get_header();
 		echo '</div>';
 		endif;
 		?>	
-		
 
 	<?php
 	get_homeContent();
 	?>
 	
-
+<div class="home_footer">
 	<?php
-	 get_footer();
+	echo get_footer();
 	?>
-
-
+</div>
