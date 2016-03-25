@@ -1,5 +1,5 @@
 <?php wp_homeContent(); ?>
-<div class="index_content" style="margin:30px auto;bottom:0px;">
+<div class="index_content" style="margin:90px auto;">
 	<div class="clearfix">
 	<div class="index_content_posts">
 		
