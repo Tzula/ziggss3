@@ -15,7 +15,7 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 
 /*
 *首页内容部分
-*/
+
 .index_content{
 	width:1000px;
 	height:auto;
@@ -31,7 +31,7 @@ Tags: black, gray, dark, white, one-column, two-columns, three-columns, right-si
 	height:auto;
 	float:left;
 	padding-top:20px;
-}
+} */
 .index_content_posts .index_grid_post_img img {
 	transition:all 0.3s ease-in-out; 
 }
