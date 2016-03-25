@@ -3,6 +3,7 @@
 get_header();
 ?>
 <div class="archive" style="width:1000px;height:auto;min-height:690px;margin:20px auto;">
+	<div class="clearfix">
 	<div class="index_content" style="width:1000px;height:auto;min-height:690px;margin:20px auto;">
 		<div class="archive_title">
 			<h2><?php echo single_cat_title( '', false ); ?></h2>
