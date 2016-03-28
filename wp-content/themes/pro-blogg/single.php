@@ -110,7 +110,7 @@
 									<?php
 										$args2 = array(
 										'post_type' => 'post',
-										'posts_per_page' =>9,
+										'posts_per_page' =>24,
 										'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 										);
 
