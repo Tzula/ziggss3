@@ -430,7 +430,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .web-logo {float:left;margin-left:10px;}
-.head-nav { float: left; max-width: 767px;margin-left:50px;margin-top:50px;}
+.head-nav { float: left; max-width: 767px;margin-right:35px;margin-top:50px;}
 .head-nav ul { list-style-type: none; margin: 0; padding: 0; font-size: 0; }
 .head-nav ul li { display: inline-block; position: relative; margin: 0 5px 0 0; }
 .head-nav ul li:last-child { margin-right: 0; }
