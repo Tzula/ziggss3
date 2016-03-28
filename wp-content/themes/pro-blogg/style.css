@@ -434,7 +434,7 @@ img { max-width: 100%; height: auto; }
 .head-nav ul { list-style-type: none; margin: 0; padding: 0; font-size: 0; }
 .head-nav ul li { display: inline-block; position: relative; margin: 0 5px 0 0; }
 .head-nav ul li:last-child { margin-right: 0; }
-.head-nav ul li a { font-size:18px; font-weight:600;color: #333; display: block; 
+.head-nav ul li a { font-size:16px; font-weight:500;color: #333; display: block; 
   padding: 5px 7px; text-transform: uppercase; letter-spacing: 1px;}
   .head-nav ul li a:hover,
 .head-nav ul li.current-menu-item > a,
