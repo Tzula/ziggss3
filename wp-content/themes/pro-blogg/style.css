@@ -269,6 +269,7 @@ background: url("http://www.92app.com/wp-content/themes/thesis_18/custom/images/
 	overflow:hidden;
 	font-size:18px;
 	font-weight: 700;
+	letter-spacing: 1px;
 }
 .hot_post_info a:link{
 	color:#fff;
