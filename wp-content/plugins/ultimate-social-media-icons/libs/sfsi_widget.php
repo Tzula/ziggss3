@@ -157,17 +157,17 @@ function sfsi_check_visiblity($isFloter=0)
          $top = "15";
          switch($sfsi_section5['sfsi_icons_floatPosition'])
          {
-             case "top-left" : if(is_admin_bar_showing()) :  $position.="position:absolute;left:30px;top:35px;"; $top="35"; else : $position.="position:absolute;left:10px;top:2%"; $top="10"; endif;                                                
+             case "top-left" : if(is_admin_bar_showing()) :  $position.="position:fixed;left:30px;top:35px;"; $top="35"; else : $position.="position:fixed;left:10px;top:2%"; $top="10"; endif;                                                
              break;
-             case "top-right" : if(is_admin_bar_showing()) :  $position.="position:absolute;right:30px;top:35px;"; $top="35"; else : $position.="position:absolute;right:10px;top:2%"; $top="10"; endif;                       
+             case "top-right" : if(is_admin_bar_showing()) :  $position.="position:fixed;right:30px;top:35px;"; $top="35"; else : $position.="position:fixed;right:10px;top:2%"; $top="10"; endif;                       
              break;
-             case "center-right" : $position.="position:absolute;right:30px;top:50%"; $top="center"; 
+             case "center-right" : $position.="position:fixed;right:30px;top:50%"; $top="center"; 
              break;
-             case "center-left" : $position.="position:absolute;left:30px;top:50%"; $top="center";  
+             case "center-left" : $position.="position:fixed;left:30px;top:20%"; $top="center";  
              break;
-             case "bottom-right" : $position.="position:absolute;right:30px;bottom:0px"; $top="bottom"; 
+             case "bottom-right" : $position.="position:fixed;right:30px;bottom:0px"; $top="bottom"; 
              break;
-             case "bottom-left" : $position.="position:absolute;left:30px;bottom:0px"; $top="bottom"; 
+             case "bottom-left" : $position.="position:fixed;left:30px;bottom:0px"; $top="bottom"; 
              break;
          }
         //$jquery.="jQuery( document ).ready(function( $ ) { sfsi_float_widget('".$top."')});";
