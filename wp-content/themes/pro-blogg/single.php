@@ -31,14 +31,14 @@
 					<!--博客详情部分添加300*250广告位 -->
 					<div class="single_srticle_ad_site">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<!-- orzzzz content 300250 -->
-							<ins class="adsbygoogle" class="single_srticle_ad_site_ins" 
-								 data-ad-client="ca-pub-3742939967040468"
-								 data-ad-slot="2803209634">
-							</ins>
-							<script>
-							(adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
+						<!--  -->
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:300px;height:250px"
+							 data-ad-client="ca-pub-3742939967040468"
+							 data-ad-slot="2803209634"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
 					</div>
 					<div class="single_detail_content">
 						<?php the_content(); ?>
@@ -48,7 +48,8 @@
 					<div class="single_srticle_bottom_ad_site">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 						<!-- orzzz content bottom 300250 -->
-						<ins class="adsbygoogle" class="single_srticle_ad_site_ins" 
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:300px;height:250px"
 							 data-ad-client="ca-pub-3742939967040468"
 							 data-ad-slot="4315138836"></ins>
 						<script>
