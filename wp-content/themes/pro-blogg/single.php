@@ -67,16 +67,16 @@
 					<!--此处为文章的评论部分，默认为隐藏状态-->
 					[<a id="single_comments" href="#">Show Comment</a>]			
 					<script type="text/javascript" src="/wp-content/themes/pro-blogg/js/jquery-1.8.3.min.js"></script>
-					<!--
 					<script>
 						
 						$("#single_comments").click(function(){
-							
-							$('#single_comments_list').show(); 
+							alert(3333);
+							$('#single_comments_list').show(); alert(4444);
+							//$('#single_comments_list').css('display','block');
+							alert(4444);
 						});
 					
 					</script>
-					-->
 					<div id="single_comments_list" style="display:none">
 						<div class="clear"></div>
 						<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
@@ -110,7 +110,7 @@
 									<?php
 										$args2 = array(
 										'post_type' => 'post',
-										'posts_per_page' =>4,
+										'posts_per_page' =>24,
 										'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 										);
 
@@ -146,20 +146,17 @@
 											
 											?>
 									</div>
-
 									<?php
-
 										echo '<div class="load_more_content"><div class="load_more_text">';
-											
 											ob_start();
-												get_single_next_posts_link('LOAD MORE',$query->max_num_pages);
+												next_posts_link('LOAD MORE',$query->max_num_pages);
 												$buffer = ob_get_contents();
 											ob_end_clean();
 											if(!empty($buffer)) {echo $buffer;}
 										echo'</div></div>';					
 										$max_pages = $query->max_num_pages;
 										wp_reset_postdata();
-									}//endif
+									}//endif	
 									?>
 									<span id="max-pages" style="display:none"><?php echo $max_pages ?></span>
 							</div>
@@ -172,15 +169,16 @@
 		<div class="single_sidebar">
 			<!--边栏广告位-->
 			<div class="single_sidebar_ad_site">
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- orzzzz content 300*600 -->
-					<ins class="adsbygoogle"
+					
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- orzzzz content 300*600 -->
+				<ins class="adsbygoogle"
 					 style="display:inline-block;width:300px;height:600px"
 					 data-ad-client="ca-pub-3742939967040468"
 					 data-ad-slot="7373010037"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</div>
 			<div class="single_sidebar_one_title" >
 				<img src="/wp-content/uploads/2016/03/whathot.png" width="305px" height:30px;>
