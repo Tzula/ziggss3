@@ -147,7 +147,7 @@
 											?>
 									</div>
 									<?php
-										echo '<div class="load_more_content"><div class="load_more_text">';
+										echo '<div class="single_load_more_content"><div class="single_load_more_text">';
 											ob_start();
 												next_posts_link('LOAD MORE',$query->max_num_pages);
 												$buffer = ob_get_contents();
