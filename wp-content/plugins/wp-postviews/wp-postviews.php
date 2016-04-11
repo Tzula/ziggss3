@@ -290,6 +290,7 @@ if(!function_exists('get_least_viewed_category')) {
 function get_timespan_most_viewed($mode = '', $limit = 10, $days = 7, $display = true) {
 	global $wpdb, $post;	
 	$limit_date = current_time('timestamp') - ($days*86400); 
+	//$limit_date = '2016-03-16 18:34:24';
 	$limit_date = date("Y-m-d H:i:s",$limit_date);	
 	$where = '';
 	$temp = '';
@@ -299,28 +300,30 @@ function get_timespan_most_viewed($mode = '', $limit = 10, $days = 7, $display =
 		$where = '1=1';
 	}
 	$most_viewed = $wpdb->get_results("SELECT $wpdb->posts.*, (meta_value+0) AS views FROM $wpdb->posts LEFT JOIN $wpdb->postmeta ON $wpdb->postmeta.post_id = $wpdb->posts.ID WHERE post_date < '".current_time('mysql')."' AND post_date > '".$limit_date."' AND $where AND post_status = 'publish' AND meta_key = 'views' AND post_password = '' ORDER  BY views DESC LIMIT $limit");
-	
-	//var_dump($most_viewed);
+	//var_dump($most_viewed);exit;
 	if($most_viewed) {
 		$hots = array();
 		foreach ($most_viewed as $key => $post) {
-			$post_title = get_the_title();
-			$post_views = intval($post->views);
+			$post = get_object_vars($post);
+			$post_title = $post['post_title'];
+			$post_views = $post['views'];
 			$post_views = number_format($post_views);
-			$post_content = get_post($post->ID)->post_content; //获取指定ID的文章的内容
+			$post_content = $post['post_content']; //获取指定ID的文章的内容
+			$post_id = $post['ID'];
 
 			$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post_content, $matches);//用正则过滤文章获取文章特色图片的url
 	
 			$hots[$key] = array(
 				'post_title' => $post_title,
-				'img_Url' => $matches[1][0]
+				'img_Url' => $matches[1][0],
+				'post_id' => $post_id
+
 			);
 		}
 		
 		foreach ($hots as $key => $hot) {
 			$thumb =  '<img src="'.$hot['img_Url'].'" alt="暂无特色图片" width="300px">';  
-			$temp .= '<li style="list-style-type:none;" class="asidepost-list-li"><div class="hot_post"><a href="'.get_permalink().'" class="hot_imginfo">'.$thumb.'</a><div class="hot_post_info"><a class="hot_subtitle" href="'.get_permalink().'" style="">'.mb_strimwidth($hot['post_title'],0,56,'').'</a>'.__('', 'wp-postviews').'</div></div></li>';
-
+			$temp .= '<li style="list-style-type:none;" class="asidepost-list-li"><div class="hot_post"><a href="'.get_permalink($hot['post_id']).'" class="hot_imginfo">'.$thumb.'</a><div class="hot_post_info"><a class="hot_subtitle" href="'.get_permalink($hot['post_id']).'" style="">'.mb_strimwidth($hot['post_title'],0,56,'').'</a>'.__('', 'wp-postviews').'</div></div></li>';
 		}
 
 	} else {
@@ -332,6 +335,8 @@ function get_timespan_most_viewed($mode = '', $limit = 10, $days = 7, $display =
 		return $temp;
 	}
 }
+
+
 
 
 ### Function: Display Most Viewed Page/Post By Category ID
